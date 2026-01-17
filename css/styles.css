@@ -1,0 +1,286 @@
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    z-index: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+:root {
+    font-family: Inter, sans-serif;
+    font-feature-settings: 'liga' 1, 'calt' 1;
+    /* fix for Chrome */
+}
+
+@supports (font-variation-settings: normal) {
+    :root {
+        font-family: InterVariable, sans-serif;
+    }
+}
+
+.navbarWrapper {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32.36px;
+    padding: 15px 64.72px;
+    border: 1.01px;
+}
+
+.navMenu a {
+    font: normal normal 500 16.18px/150% 'Inter', sans-serif;
+    text-decoration: none;
+    color: #162456;
+    font-weight: 400;
+    font-size: 16.18px;
+    line-height: 150%;
+    letter-spacing: 0px;
+}
+
+#logoGTG {
+    width: 75px;
+    height: 28px;
+}
+
+.navMenu {
+    display: flex;
+    gap: 32.36px;
+    align-items: center;
+}
+
+#downArrow {
+    width: 12.74px;
+    position: relative;
+    left: 5.77px;
+}
+
+#searchBtn {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+#searchBtn img {
+    width: 38px;
+    height: 38px;
+}
+
+#shopNowBtn {
+    width: auto;
+    height: auto;
+    padding: 16px 28px;
+    /* Typography */
+    line-height: 16.18px;
+    font-weight: 500;
+    font-size: 18.2px;
+    letter-spacing: normal;
+    /* Appearance */
+    color: #ffffff;
+    border: 1.01px solid transparent;
+    border-radius: 505.64px;
+    background: linear-gradient(180deg, #032E15 0%, #016630 100%);
+    font-style: Medium;
+    cursor: pointer;
+}
+
+.heroSection {
+    background-color: #cccccc;
+    background-image: url("../assets/heroBackground.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* height: 794px; */
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    margin-top: -80px;
+    position: static;
+    z-index: -1;
+    gap: 40px;
+}
+
+.heroContent {
+    position: absolute;
+    top: 200px;
+    left: 64.72px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+#awardInfo {
+    display: inline-flex;
+    align-items: center;
+    border: 0.5px solid transparent;
+    border-radius: 10000px;
+    padding: 8px 16px;
+    gap: 8px;
+    background: linear-gradient(180deg, rgba(3, 46, 21, 0.6) 0%, rgba(1, 102, 48, 0.6) 100%);
+    border: 0.5px solid;
+
+    border-image-source: linear-gradient(90.05deg, rgba(255, 255, 255, 0.5) 0.04%, rgba(252, 252, 252, 0.4) 102.54%);
+
+    /* background: linear-gradient(to top, #016630 0%, #032E15 100%); */
+    border-image: linear-gradient(to top, #FFFFFF 50%, #FCFCFC 40%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+}
+
+#awardMedal {
+    width: 24px;
+    height: 24px;
+    ;
+}
+
+#awardDesc {
+    font: normal normal 500 14.56px/150% 'Inter', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 1;
+    letter-spacing: normal;
+    color: #FFFFFF;
+    font-weight: 300;
+}
+
+#heroContentHead {
+    font-family: Inter, sans-serif;
+    font-size: 56px;
+    font-weight: 700;
+    font-style: Bold;
+    color: #032E15;
+    line-height: 112%;
+    letter-spacing: -1.33px;
+    margin: 27px 0 40px 0;
+}
+
+#heroStats {
+    display: inline-flex;
+}
+
+#heroStats div {
+    gap: 18px;
+}
+
+.heroSubStats {
+    font-family: Inter, sans-serif;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    width: 183.5px;
+    gap: 18px;
+    align-items: center;
+    background: linear-gradient(180deg, rgba(3, 46, 21, 0.6) 0%, rgba(1, 102, 48, 0.6) 100%);
+    margin: -8px 0;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-font-smoothing: antialiased;
+}
+
+.heroSubStatsSpan {
+    width: 64px;
+    height: 16px;
+    font-weight: 300;
+    font-style: Light;
+    font-size: 22px;
+    margin: -3px 0;
+    /* in-lieu of verticle trim */
+    line-height: 104%;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    color: #0D542B;
+    gap: 18px;
+}
+
+#shopNowBtn_1 {
+    font-family: Inter, sans-serif;
+    color: #FFFFFF;
+    font-size: 18.2px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0px;
+    margin-top: 40px;
+    width: 185.33px;
+    height: auto;
+    opacity: 1;
+    gap: 100px;
+    padding: 12px 16px;
+    border-radius: 100px;
+    gap: 100;
+    background: linear-gradient(180deg, #032E15 0%, #016630 100%);
+    box-shadow: 0px 6px 12px 0px #0000001A;
+}
+
+/* Product Section */
+.productContainer {
+    display: flex;
+    margin: 184px 92px 0;
+    height: auto;
+    opacity: 1;
+    gap: 92px;
+    top: 941px;
+    left: 63.05px;
+    gap: 108px;
+}
+
+#imageSection {
+    width: 610px;
+    height: auto;
+    gap: 30px;
+}
+
+#mainImg {
+    width: 610px;
+    height: 673px;
+    border-radius: 16px;
+}
+
+#thumbnailImages {
+    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    min-height: 200px;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+#thumbnailImages img {
+    width: 130px;
+    height: 130px;
+}
+
+/* Product Description and order section */
+#productName {
+    margin-top: 0;
+    margin-bottom: 6px;
+    font-family: Inter, sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    color: #032E15;
+}
+
+#productName img span {
+    font-family: Inter;
+    font-weight: 300;
+    font-style: Light;
+    font-size: 13px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #032E15;
+}
+
+#prodDesc{
+font-weight: 300;
+font-size: 16.18px;
+line-height: 100%;
+letter-spacing: 0%;
+text-align: justify;
+color: #032E15;
+margin-top: 20px;
+}
