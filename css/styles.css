@@ -18,6 +18,82 @@ body {
     }
 }
 
+/* Hamburger CSS */
+
+.containerHam {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.containerHam:focus {
+    background-color: #2980B9;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+/* The container <div> - needed to position the dropdown content */
+.hamDropdown {
+    position: relative;
+    display: none;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdownContent {
+    text-align: end;
+    right: 0;
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdownContent a {
+    padding: 12px 16px;
+    display: block;
+    font: normal normal 500 16.18px/150% 'Inter', sans-serif;
+    text-decoration: none;
+    color: #162456;
+    font-weight: 400;
+    font-size: 16.18px;
+    line-height: 150%;
+    letter-spacing: 0px;
+}
+
+/* Change color of dropdown links on hover */
+.dropdownContent a:hover {
+    background-color: #ddd;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+    display: block;
+}
+
+/* Navbar CSS */
+
 .navbarWrapper {
     background-color: transparent;
     display: flex;
@@ -26,6 +102,7 @@ body {
     gap: 32.36px;
     padding: 15px 64.72px;
     border: 1.01px;
+    height: 36px;
 }
 
 .navMenu a {
@@ -41,6 +118,20 @@ body {
 #logoGTG {
     width: 75px;
     height: 28px;
+}
+
+#GTGLogo {
+    font-family: Inter;
+    font-weight: 800;
+    font-style: Extra Bold;
+    font-size: 30px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    background: linear-gradient(180deg, rgba(3, 46, 21, 0.6) 0%, rgba(1, 102, 48, 0.6) 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-font-smoothing: antialiased;
 }
 
 .navMenu {
@@ -86,23 +177,33 @@ body {
 
 .heroSection {
     background-color: #cccccc;
-    background-image: url("../assets/heroBackground.png");
+    /* background-image: url("../assets/heroBackground.png");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center; */
     /* height: 794px; */
-    min-height: 100vh;
-    width: 100%;
+    /* width: 100%; */
+    width: initial;
     display: flex;
     margin-top: -80px;
-    position: static;
+    position: relative;
     z-index: -1;
     gap: 40px;
 }
 
+.heroBG {
+    background: #FFFFFF url("../assets/heroBackground.png") no-repeat;
+    background-origin: content-box;
+    /* background-size: cover; */
+    background-size: 100% auto;
+    background-position: left top;
+    background-clip: border-box;
+    min-height: 100vh;
+}
+
 .heroContent {
     position: absolute;
-    top: 200px;
+    top: 150px;
     left: 64.72px;
     display: flex;
     flex-direction: column;
@@ -169,7 +270,6 @@ body {
     font-size: 72px;
     line-height: 100%;
     letter-spacing: 0px;
-    width: 183.5px;
     gap: 18px;
     align-items: center;
     background: linear-gradient(180deg, rgba(3, 46, 21, 0.6) 0%, rgba(1, 102, 48, 0.6) 100%);
@@ -180,11 +280,22 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+#sec10x {
+    width: 183.5px;
+}
+
+#sec9 {
+    width: 157px;
+}
+
+.sec20k+ {
+    width: 191px;
+}
+
 .heroSubStatsSpan {
     width: 64px;
     height: 16px;
     font-weight: 300;
-    font-style: Light;
     font-size: 22px;
     margin: -3px 0;
     /* in-lieu of verticle trim */
@@ -212,15 +323,17 @@ body {
     gap: 100;
     background: linear-gradient(180deg, #032E15 0%, #016630 100%);
     box-shadow: 0px 6px 12px 0px #0000001A;
+    cursor: pointer;
 }
 
 /* Product Section */
 .productContainer {
     display: flex;
-    margin: 184px 92px 0;
+    width: -webkit-fill-available;
+    max-width: 100%;
+    margin: 125px 63px 0;
     height: auto;
     opacity: 1;
-    gap: 92px;
     top: 941px;
     left: 63.05px;
     gap: 108px;
@@ -232,10 +345,53 @@ body {
     gap: 30px;
 }
 
-#mainImg {
-    width: 610px;
+#mainImage {
     height: 673px;
+    max-width: 610px;
+    max-height: 673px;
+    position: relative;
+}
+
+#mainImg {
+    width: 100%;
+    height: 100%;
     border-radius: 16px;
+}
+
+.carousalControl {
+    display: inline-flex;
+    align-items: center;
+    position: absolute;
+    justify-content: space-between;
+    width: 100%;
+    height: 39px;
+    bottom: 9px;
+    left: 29px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding: 12px 29px;
+    margin-left: -29px;
+    width: 100%;
+    /* Fallback for all browsers */
+    width: -moz-available;
+    /* Firefox prefix */
+    width: -webkit-fill-available;
+    /* Chrome, Edge, Safari prefix */
+    width: stretch;
+    /* Future standard */
+}
+
+.carousalControl img {
+    cursor: pointer;
+}
+
+#dotIndicators {
+    display: flex;
+    gap: 8px;
+}
+
+#dotIndicators img {
+    height: 8px;
 }
 
 #thumbnailImages {
@@ -243,14 +399,17 @@ body {
     display: flex;
     flex-wrap: wrap;
     align-items: stretch;
+    width: fit-content;
     min-height: 200px;
     gap: 30px;
     margin-top: 30px;
 }
 
 #thumbnailImages img {
-    width: 130px;
-    height: 130px;
+    width: 100%;
+    height: 100%;
+    max-width: 104px;
+    max-height: 130px;
 }
 
 /* Product Description and order section */
@@ -275,12 +434,149 @@ body {
     color: #032E15;
 }
 
-#prodDesc{
-font-weight: 300;
-font-size: 16.18px;
-line-height: 100%;
-letter-spacing: 0%;
-text-align: justify;
-color: #032E15;
-margin-top: 20px;
+#prodDesc {
+    font-weight: 300;
+    font-size: 16.18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: justify;
+    color: #032E15;
+    margin-top: 20px 0 31px;
+}
+
+#descSection {
+    width: fit-content;
+    max-width: 610px;
+}
+
+#mostPopBtn {
+    width: 100%;
+    height: 43.48538589477539;
+    border-width: 1.01px;
+    border-top-left-radius: 6.07px;
+    border-top-right-radius: 6.07px;
+    background: linear-gradient(270deg, #032E15 0%, #008236 51.92%, #00C950 100%);
+    border: 1.01px solid #B8B8B8
+}
+
+
+
+
+
+#footer {
+    width: fit-content;
+    min-width: 100%;
+    height: 390px;
+    top: 4367px;
+    left: -4px;
+    background: #032E15;
+    padding: 70px 65px;
+}
+
+#footer div {
+    min-width: 301px;
+    min-height: 73px;
+    top: 75px;
+    left: 81px;
+}
+
+#logoGTGFooter {
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 42.32px;
+    line-height: 100%;
+    letter-spacing: normal;
+    color: #FFFFFF;
+}
+
+#contentFrame {
+    display: flex;
+    gap: 16px;
+    color: #FFFFFF;
+}
+
+.footerSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.footerSection a {
+    display: flex;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 0px;
+    font-family: 'Oxanium';
+    font-weight: 300;
+    font-size: 14.16px;
+    line-height: 150%;
+    letter-spacing: normal;
+
+}
+
+.footerSection a img{
+    margin-right: 12px;
+    width: 25px;
+}
+
+
+/* Styles for screens 600px and up (tablets, desktops, etc.) */
+@media screen and (max-width: 600px) {
+    body {
+        font-family: Inter;
+    }
+
+    .hamDropdown {
+        display: inline-block;
+    }
+
+    .navMenu {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    body {
+        font-family: Inter;
+    }
+
+    .hamDropdown {
+        display: inline-block;
+    }
+
+    .navMenu {
+        display: none;
+    }
+}
+
+
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+    /* CSS styles for tablets in portrait mode */
+    .hamDropdown {
+        display: inline-block;
+    }
+
+    .navMenu {
+        display: none;
+    }
+}
+
+
+
+
+
+@media only screen and (min-width: 900px) and (max-width: 1024px) and (orientation: landscape) {
+
+    /* CSS styles for tablets in landscape mode */
+    .hamDropdown {
+        display: inline-block;
+    }
+
+    .navMenu {
+        display: none;
+    }
 }

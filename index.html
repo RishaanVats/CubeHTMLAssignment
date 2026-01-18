@@ -1,79 +1,177 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home Page - GTG</title>
     <!-- Referencing Inter Font -->
-    <link rel="preconnect" href="https://rsms.me/">
-    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="preconnect" href="https://rsms.me/" />
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+    <!-- Referencing font Oxanium -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Oxanium"
+      rel="stylesheet"
+    />
     <!-- Local CSS File -->
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css" />
     <!-- Local JS File -->
     <script src="./js/main.js" defer></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <navbar class="navbarWrapper">
-        <img id="logoGTG" src="./assets/logos/GTG.svg" alt="GTG Logo" />
-        <div class="navMenu">
-            <a href="/">Home</a>
-            <a href="/products">Shop <span><img id="downArrow" src="./assets/icons/Vector.svg"
-                        alt="down arrow"></span></a>
-            <a href="/fragrances">Fragrances</a>
-            <a href="/about">About Us</a>
-            <a href="/blog">Blog</a>
-            <a href="/contact">Contact</a>
+      <!-- <img id="logoGTG" src="./assets/logos/GTG.svg" alt="GTG Logo" /> -->
+      <p id="GTGLogo">GTG</p>
+      <div class="navMenu">
+        <a href="/">Home</a>
+        <a href="/products"
+          >Shop
+          <span
+            ><img
+              id="downArrow"
+              src="./assets/icons/Vector.svg"
+              alt="down arrow" /></span
+        ></a>
+        <a href="/fragrances">Fragrances</a>
+        <a href="/about">About Us</a>
+        <a href="/blog">Blog</a>
+        <a href="/contact">Contact</a>
+      </div>
+      <div id="searchBtn">
+        <img
+          id="searchIcon"
+          src="./assets/icons/fi_2811790.png"
+          alt="Search Icon"
+        />
+        <button id="shopNowBtn">Shop Now</button>
+      </div>
+      <!-- Hamburger menu for mobile and tablet view -->
+      <div class="hamDropdown">
+        <div class="containerHam" onclick="hamburgerSwitch(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
         </div>
-        <div id="searchBtn">
-            <img id="searchIcon" src="./assets/icons/fi_2811790.png" alt="Search Icon" />
-            <button id="shopNowBtn">Shop Now</button>
+        <div id="menuDropdown" class="dropdownContent">
+          <a href="/products"
+            >Shop
+            <span
+              ><img
+                id="downArrow"
+                src="./assets/icons/Vector.svg"
+                alt="down arrow" /></span
+          ></a>
+          <a href="/fragrances">Fragrances</a>
+          <a href="/about">About Us</a>
+          <a href="/blog">Blog</a>
+          <a href="/contact">Contact</a>
         </div>
+      </div>
     </navbar>
-    <div class="heroSection">
-        <div class="heroContent">
-            <div id="awardInfo">
-                <img id="awardMedal" src="./assets/icons/Medal.svg" alt="Medal icon"><span id="awardDesc">Awarded
-                    the best perfume in the world</span>
-            </div>
-            <div>
-                <p id="heroContentHead">Live your best life.</p>
-            </div>
-            <div id="heroStats">
-                <div>
-                    <p class="heroSubStats">10x</p>
-                    <p class="heroSubStatsSpan">power</p>
-                </div>
-                <div>
-                    <p class="heroSubStats">9</p>
-                    <p class="heroSubStatsSpan">ingredients</p>
-                </div>
-                <div>
-                    <p class="heroSubStats">20K+</p>
-                    <p class="heroSubStatsSpan">happy customers</p>
-                </div>
-            </div>
-            <button id="shopNowBtn_1">Shop Now</button>
+    <div class="heroSection heroBG">
+      <div class="heroContent">
+        <div id="awardInfo">
+          <img
+            id="awardMedal"
+            src="./assets/icons/Medal.svg"
+            alt="Medal icon"
+          /><span id="awardDesc">Awarded the best perfume in the world</span>
         </div>
+        <div>
+          <p id="heroContentHead">Live your best life.</p>
+        </div>
+        <div id="heroStats">
+          <div>
+            <p class="heroSubStats" id="sec10x">10x</p>
+            <p class="heroSubStatsSpan">power</p>
+          </div>
+          <div>
+            <p class="heroSubStats" id="sec9">9</p>
+            <p class="heroSubStatsSpan">ingredients</p>
+          </div>
+          <div>
+            <p class="heroSubStats" class="sec20k+">20K+</p>
+            <p class="heroSubStatsSpan" style="width: 191px">happy customers</p>
+          </div>
+        </div>
+        <button id="shopNowBtn_1">Shop Now</button>
+      </div>
     </div>
     <section class="productContainer">
-        <div id="imageSection">
-            <div id="mainImage">
-                <img id="mainImg" alt="">
+      <div id="imageSection">
+        <div id="mainImage">
+          <img id="mainImg" alt="" />
+          <div class="carousalControl">
+            <img
+              id="leftArrow"
+              src="./assets/icons/Button.svg"
+              alt="Left Arrow"
+            />
+            <div id="dotIndicators">
+              <!-- Place for injecting the dots with image status indicator using JavaScript -->
             </div>
-            <div id="thumbnailImages">
-
-            </div>
+            <img
+              id="rightArrow"
+              src="./assets/icons/Button-1.svg"
+              alt="Right Arrow"
+            />
+          </div>
         </div>
-        <div id="descSection">
-            <p id="productName">GTG Perfumes</p>
-            <img src="./assets/icons/ratingStars.png"
-                alt="rating 4.5 stars out of 5 from 999+ reviews" /><span>&nbsp;4.7 (999+ reviews)</span>
-            <p id="prodDesc">Experience the timeless allure backed by modern artistry, captured in every bottle of our
-                fragrance. Crafted for those who seek to elevate their essence with purpose and sophistication.</p>
+        <div id="thumbnailImages">
+          <!-- Place for injecting thumbnailImages using JavaScript -->
         </div>
+      </div>
+      <div id="descSection">
+        <p id="productName">GTG Perfumes</p>
+        <img
+          src="./assets/icons/ratingStars.png"
+          alt="rating 4.5 stars out of 5 from 999+ reviews"
+        /><span>&nbsp;4.7 (999+ reviews)</span>
+        <p id="prodDesc">
+          Experience the timeless allure backed by modern artistry, captured in
+          every bottle of our fragrance. Crafted for those who seek to elevate
+          their essence with purpose and sophistication.
+        </p>
+        <button id="mostPopBtn" onclick="">Most Popular</button>
+      </div>
     </section>
-</body>
-
+    <footer id="footer">
+      <div><span id="logoGTGFooter">GTG</span></div>
+      <div id="contentFrame">
+        <div class="footerSection">
+          <a href="/" alt="Link to Facebook">Home</a>
+          <a href="/shop" alt="Link to shop">Shop</a>
+          <a href="/fragrances" alt="Link to fragrances">Fragrances</a>
+        </div>
+        <div class="footerSection">
+          <a href="/about-us" alt="Link to about us section">About Us</a>
+          <a href="/blog" alt="Link to blog section">Blog</a>
+          <a href="/contact" alt="Link to contact section">Contact</a>
+        </div>
+        <div class="footerSection">
+          <a href="www.facebook.com" target="_blank" alt="Link to Facebook"
+            ><img
+              style="height: 20px; width: 20px"
+              src="./assets/icons/Facebook.png"
+              alt="Facebook icon"
+            />Facebook</a
+          >
+          <a href="www.instagram.com" target="_blank" alt="Link to Instagram"
+            ><img
+              style="height: 18px; width: 18px"
+              src="./assets/icons/instagram.png"
+              alt="Instagram icon"
+            />Instagram</a
+          >
+          <a href="www.x.com" target="_blank" alt="Link to X (formerly twitter)"
+            ><img
+              style="height: 16px; width: 18px"
+              src="./assets/icons/x.png"
+              alt="X (formerly twitter) icon"
+            />X</a
+          >
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
