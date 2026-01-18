@@ -41,7 +41,7 @@ var imgSet = { id: "", src: "", alt: "" }; // Current main image tracking
 imgSet = { id: "0", src: images[0].address, alt: images[0].alt };
 mainImg.src = images[0].address;
 mainImg.alt = images[0].alt;
-setDots(Number(0));
+setDots();
 
 function setMainImage(id, move) {
     if (!move) {
@@ -57,7 +57,7 @@ function setMainImage(id, move) {
     imgSet = { id: id, src: images[id].address, alt: images[id].alt };
     mainImg.src = imgSet.src;
     mainImg.alt = imgSet.alt;
-    setDots(id);
+    setDots();
 }
 
 // Render all the thumbnails dynamically
@@ -100,7 +100,7 @@ document
                 alt: images[numId].alt,
             };
         }
-        setDots(id);
+        setDots();
     });
 
 // Listen to the clicks on the dots and then set them as the main Image.
@@ -119,13 +119,14 @@ document
                 alt: images[numId].alt,
             };
         }
-        setDots(id);
+        setDots();
     });
 
 // When the user clicks on the button, toggle between hiding and showing the dropdown content
 // Hamburger Menu Click and animate
 function hamburgerSwitch(ele) {
     ele.classList.toggle("change");
+    ele.setAttribute('aria-expanded', ele.classList.contains('change'))
     document.getElementById("menuDropdown").classList.toggle("show");
 }
 

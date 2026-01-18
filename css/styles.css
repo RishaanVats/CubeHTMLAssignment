@@ -123,7 +123,6 @@ body {
 #GTGLogo {
     font-family: Inter;
     font-weight: 800;
-    font-style: Extra Bold;
     font-size: 30px;
     line-height: 150%;
     letter-spacing: 0%;
@@ -171,7 +170,6 @@ body {
     border: 1.01px solid transparent;
     border-radius: 505.64px;
     background: linear-gradient(180deg, #032E15 0%, #016630 100%);
-    font-style: Medium;
     cursor: pointer;
 }
 
@@ -249,7 +247,6 @@ body {
     font-family: Inter, sans-serif;
     font-size: 56px;
     font-weight: 700;
-    font-style: Bold;
     color: #032E15;
     line-height: 112%;
     letter-spacing: -1.33px;
@@ -288,7 +285,7 @@ body {
     width: 157px;
 }
 
-.sec20k+ {
+.sec20k {
     width: 191px;
 }
 
@@ -320,7 +317,6 @@ body {
     gap: 100px;
     padding: 12px 16px;
     border-radius: 100px;
-    gap: 100;
     background: linear-gradient(180deg, #032E15 0%, #016630 100%);
     box-shadow: 0px 6px 12px 0px #0000001A;
     cursor: pointer;
@@ -427,7 +423,6 @@ body {
 #productName img span {
     font-family: Inter;
     font-weight: 300;
-    font-style: Light;
     font-size: 13px;
     line-height: 100%;
     letter-spacing: 0%;
@@ -449,33 +444,63 @@ body {
     max-width: 610px;
 }
 
-#mostPopBtn {
+#mostPopHead {
     width: 100%;
-    height: 43.48538589477539;
+    height: 43.48px;
     border-width: 1.01px;
     border-top-left-radius: 6.07px;
     border-top-right-radius: 6.07px;
     background: linear-gradient(270deg, #032E15 0%, #008236 51.92%, #00C950 100%);
+    border: 1.01px solid #B8B8B8;
+    color: #FFFFFF;
+    text-align: center;
+    align-content: center;
+}
+
+.formRadio {
+    width: 609.96px;
+    height: 56.63px;
+    top: 783px;
+    border-radius: 6.07px;
+    background: #FFFFFF;
     border: 1.01px solid #B8B8B8
 }
 
+.formRadio input {
+    width: 17px;
+    height: 17px;
+    top: 804.24px;
+    left: 22.18px;
+    border-width: 0.81px;
+    border: 0.81px solid #00C950;
+}
 
+.formRadio label {
+    width: 281.84px;
+    height: 30px;
+    top: 796.2px;
+    left: 51.02px;
+    font-family: Inter;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.9px;
+    vertical-align: middle;
+    color: #032E15;
+}
 
-
+#singleSubscription{
+    display: block;
+}
 
 #footer {
-    width: fit-content;
-    min-width: 100%;
-    height: 390px;
-    top: 4367px;
-    left: -4px;
     background: #032E15;
     padding: 70px 65px;
 }
 
 #footer div {
-    min-width: 301px;
-    min-height: 73px;
+    min-width: 17vw;
+    min-height: 55px;
     top: 75px;
     left: 81px;
 }
@@ -491,6 +516,7 @@ body {
 
 #contentFrame {
     display: flex;
+    flex-wrap: wrap;
     gap: 16px;
     color: #FFFFFF;
 }
@@ -498,7 +524,7 @@ body {
 .footerSection {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .footerSection a {
@@ -514,11 +540,100 @@ body {
 
 }
 
-.footerSection a img{
+.footerSection a img {
     margin-right: 12px;
     width: 25px;
 }
 
+#footerSubframe {
+    display: flex;
+    width: 58%;
+    height: 150px;
+}
+
+#footerSubframe_1 {
+    color: #FFFFFF;
+    width: 40%;
+}
+
+#footerSubTag {
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: normal;
+    margin-bottom: 20px;
+}
+
+#footerSubtag_1 {
+    font-family: Oxanium;
+    font-weight: 300;
+    font-size: 12.14px;
+    line-height: 150%;
+    letter-spacing: normal;
+}
+
+#footerSubtag_1 span {
+    font-family: Oxanium;
+    font-weight: 300;
+    font-size: 12.14px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-thickness: auto;
+    margin-top: -10px;
+}
+
+#footerEmail {
+    width: 318px;
+    height: 22px;
+    gap: 8.09px;
+    border-width: 1.01px;
+    padding: 12.14px;
+    border: 1.01px solid #FFFFFF;
+    font-family: Inter;
+    font-weight: 300;
+    font-size: 16.18px;
+    line-height: 150%;
+    letter-spacing: normal;
+    padding: 12.14px;
+    margin-right: 8.09px;
+}
+
+#footerSubscribe {
+    width: 130px;
+    height: 48px;
+    gap: 8.09px;
+    padding: 12.14px 24.27px;
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 16.18px;
+    line-height: 150%;
+    letter-spacing: normal;
+    border: none;
+    background-color: #653B09;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+input[type=email] {
+    background-color: #032E15;
+    color: white;
+}
+
+input[type=email]:focus {
+    border: 1.01px solid #fff;
+}
+
+input[type=email]::placeholder {
+    color: #FFFFFF;
+    font-family: Inter;
+    font-weight: 300;
+    font-size: 16.18px;
+    line-height: 150%;
+    letter-spacing: normal;
+}
 
 /* Styles for screens 600px and up (tablets, desktops, etc.) */
 @media screen and (max-width: 600px) {
