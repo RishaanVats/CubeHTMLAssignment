@@ -95,6 +95,7 @@
                     <!-- Place for injecting thumbnailImages using JavaScript -->
                 </div>
             </div>
+            <!-- DEscription Section -->
             <div id="descSection">
                 <p id="productName">GTG Perfumes</p>
                 <img src="./assets/icons/ratingStars.png"
@@ -108,8 +109,16 @@
                 <div>
                     <form>
                         <div class="formRadio">
-                            <input type="radio" id="singleSubs" name="subscription" value="Single Subscription">
-                            <label for="singleSubs">Single Subscription</label>
+                            <div class="subscriptionHeader">
+                                <div>
+                                    <input type="radio" id="singleSubs" name="subscription" value="Single Subscription">
+                                    <label for="singleSubs">Single Subscription</label>
+                                </div>
+                                <div>
+                                    <p class="priceTag">$99.99<span class="strikedPrice">$146</span></p>
+                                </div>
+                            </div>
+                            <hr>
                             <div id="singleSubscription">
                                 <p>T</p>
                                 <p>E</p>
@@ -118,11 +127,62 @@
                             </div>
                         </div>
                         <div class="formRadio">
-                            <input type="radio" id="doubleSubs" name="subscription" value="Double Subscription">
-                            <label for="doubleSubs">Double Subscription</label>
+                            <div class="subscriptionHeader">
+                                <div>
+                                    <input type="radio" id="doubleSubs" name="subscription" value="Double Subscription">
+                                    <label for="doubleSubs">Double Subscription</label>
+                                </div>
+                                <div>
+                                    <p class="priceTag">$169.99<span class="strikedPrice">$146</span></p>
+                                </div>
+                            </div>
+                            <hr>
                         </div>
                     </form>
                 </div>
+            </div>
+        </section>
+        <section id="collectionDetails">
+            <div id="collectionText">
+                <p id="collectionHead">Our Collection</p>
+                <div class="collectionExpandable">
+                    <p class="secHead">Signature Scents</p><span><img src="./assets/icons/collapse-minus.png"
+                            alt="collapse/exapand indicator" /></span>
+                    <p>Discover our curated line of signature perfumes, designed to become your daily companion.</p>
+                </div>
+                <div class="collectionExpandable">
+                    <p class="secHead">Signature Scents</p><span><img src="./assets/icons/expand-plus.png"
+                            alt="collapse/exapand indicator" /></span>
+                </div>
+                <div class="collectionExpandable">
+                    <p class="secHead">Signature Scents</p><span><img src="./assets/icons/expand-plus.png"
+                            alt="collapse/exapand indicator" /></span>
+                </div>
+                <div class="collectionExpandable">
+                    <p class="secHead">Signature Scents</p><span><img src="./assets/icons/expand-plus.png"
+                            alt="collapse/exapand indicator" /></span>
+                </div>
+            </div>
+            <div id="collectionImg">
+                <img src="./assets/midSection.jpg" alt="Collection Image" />
+            </div>
+        </section>
+        <section id="statsRibbon">
+            <div class="stats">
+                <p class="dataStats" id="stat-1"></p>
+                <p class="statsDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            </div>
+            <div class="stats">
+                <p class="dataStats" id="stat-2"></p>
+                <p class="statsDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            </div>
+            <div class="stats">
+                <p class="dataStats" id="stat-3"></p>
+                <p class="statsDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            </div>
+            <div class="stats">
+                <p class="dataStats" id="stat-4"></p>
+                <p class="statsDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
             </div>
         </section>
     </main>
