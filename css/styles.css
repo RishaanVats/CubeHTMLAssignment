@@ -640,7 +640,7 @@ body {
 .dataStats {
     font-weight: 700;
     font-size: 40px;
-    leading-trim: CAP_HEIGHT;
+    text-box: trim-both cap alphabetic;
     line-height: 100%;
     letter-spacing: 0px;
     text-align: center;
@@ -654,6 +654,89 @@ body {
     letter-spacing: 0px;
     text-align: center;
 }
+
+/* GTG Choice styles */
+
+#gtgChoice {
+    margin: 63px 63px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#choiceHead {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+#dashed {
+    font-family: Oxanium;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #032E15;
+    margin: 30px 0 10px;
+}
+
+#gtgChoiceLine {
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #032E15;
+}
+
+#tryBtn {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: 0px;
+    width: 194.54px;
+    height: 56.27px;
+    border-radius: 505.64px;
+    padding-top: 12.14px;
+    padding-right: 24.27px;
+    padding-bottom: 12.14px;
+    padding-left: 24.27px;
+    border-bottom-width: 1.01px;
+    background: linear-gradient(180deg, #032E15 0%, #016630 100%);
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+}
+
+/* TABLE STYLES */
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    border: none;
+}
+
+table th,
+table td {
+    border: none;
+    padding: 10px 12px;
+    /* adjust to taste */
+}
+
+table tr {
+    border-bottom: 1px dashed #bcbcbc;
+    /* change color as needed */
+}
+
+table tr:last-child {
+    border-bottom: none;
+    /* optional */
+}
+
 
 /* FOOTER STYLES */
 
