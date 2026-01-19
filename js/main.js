@@ -151,6 +151,40 @@ leftArrow.addEventListener("click", () => setMainImage(imgSet.id, "left"));
 var rightArrow = document.getElementById("rightArrow");
 rightArrow.addEventListener("click", () => setMainImage(imgSet.id, "right"));
 
+
+// Ribbon Section Code --------------------------------------------------
+
+const counters = document.querySelectorAll('.dataStats');
+
+function animateCounter(el) {
+    const target = +el.dataset.target;
+    const duration = 1200; // ms
+    const start = performance.now();
+
+    function update(now) {
+        const progress = Math.min((now - start) / duration, 1);
+        el.textContent = Math.floor(progress * target) + '%';
+        if (progress < 1) requestAnimationFrame(update);
+    }
+
+    requestAnimationFrame(update);
+}
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            animateCounter(entry.target);
+            observer.unobserve(entry.target); // run once
+        }
+    });
+}, { threshold: 0.5 });
+
+counters.forEach(el => observer.observe(el));
+
+// Table of Why GTG is the #1 choice Section Code ----------------------------------
+
+
+
 // Add an event listener for the 'resize' event testing
 // window.addEventListener('resize', function () {
 //     const currentWidth = window.innerWidth;
