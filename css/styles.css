@@ -125,7 +125,7 @@ body {
     font-weight: 800;
     font-size: 30px;
     line-height: 150%;
-    letter-spacing: 0%;
+    letter-spacing: nornmal;
     background: linear-gradient(180deg, rgba(3, 46, 21, 0.6) 0%, rgba(1, 102, 48, 0.6) 100%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -196,7 +196,8 @@ body {
     background-size: 100% auto;
     background-position: left top;
     background-clip: border-box;
-    min-height: 100vh;
+    /* min-height: 100vh; */
+    aspect-ratio: 1456 / 794;
 }
 
 .heroContent {
@@ -332,25 +333,27 @@ body {
     opacity: 1;
     top: 941px;
     left: 63.05px;
-    gap: 108px;
+    gap: 88px;
     justify-content: space-evenly;
 }
 
 #imageSection {
-    width: 610px;
+    width: auto;
+    max-width: 610px;
     height: auto;
     gap: 30px;
 }
 
 #mainImage {
     height: auto;
+    width: 100%;
     max-width: 610px;
     max-height: 673px;
     position: relative;
 }
 
 #mainImg {
-    min-width: 365px;
+    min-width: 300px;
     width: 100%;
     height: 100%;
     border-radius: 16px;
@@ -393,7 +396,7 @@ body {
 #thumbnailImages {
     cursor: pointer;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     align-items: stretch;
     width: fit-content;
@@ -426,7 +429,7 @@ body {
     font-weight: 300;
     font-size: 13px;
     line-height: 100%;
-    letter-spacing: 0%;
+    letter-spacing: normal;
     color: #032E15;
 }
 
@@ -434,15 +437,16 @@ body {
     font-weight: 300;
     font-size: 16.18px;
     line-height: 100%;
-    letter-spacing: 0%;
+    letter-spacing: normal;
     text-align: justify;
     color: #032E15;
     margin-top: 20px 0 31px;
 }
 
 #descSection {
-    width: fit-content;
+    width: 100%;
     max-width: 610px;
+    height: auto;
 }
 
 #mostPopHead {
@@ -467,7 +471,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
-    width: 127px;
+    max-width: 127px;
     height: 145.89px;
     font-family: Inter;
     font-weight: 300;
@@ -478,9 +482,10 @@ body {
     background: #F9F9F9;
 }
 
-.bestSellerIcon{
+.bestSellerIcon {
     position: absolute;
 }
+
 .chooseFragrance div:nth-child(2) {
     width: 100%;
     height: auto;
@@ -492,16 +497,20 @@ body {
 }
 
 .chooseFragrance label {
-    background-image: linear-gradient(90deg, #9E6718 0%, #FFB545 100%);
+    font-family: Inter;
+    background: linear-gradient(90deg, #9E6718 0%, #FFB545 100%);
     background-clip: text;
     -webkit-background-clip: text;
     /* Required for older Chrome/Safari versions */
     color: transparent;
     cursor: pointer;
+    font-size: 17px !important;
+    font-weight: 300;
 }
 
 .formRadio {
-    width: 609.96px;
+    max-width: 609.96px;
+    width: auto;
     height: auto;
     border-radius: 6.07px;
     background: #FFFFFF;
@@ -535,10 +544,7 @@ body {
 }
 
 .formRadio label {
-    width: 281.84px;
-    height: 30px;
-    top: 796.2px;
-    left: 51.02px;
+    width: auto;
     font-family: Inter;
     font-weight: 300;
     font-size: 20px;
@@ -559,6 +565,10 @@ body {
     margin-left: 20px;
 }
 
+.labelSize {
+    font-size: 17px;
+}
+
 .radioRow {
     display: flex;
     align-items: center;
@@ -573,13 +583,16 @@ label {
     height: 56.63px;
 }
 
-#singleSubscription, #doubleSubscription {
+#singleSubscription,
+#doubleSubscription {
     display: block;
+    height: auto;
     margin: 0px 40px;
 }
 
 .subscriptionHeader {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
@@ -611,6 +624,14 @@ label {
     color: #B8B8B8;
 }
 
+.wrapFull33 {
+    width: 33%;
+}
+
+.wrapFull66 {
+    width: 66%;
+}
+
 #collectionDetails {
     margin: 126px 63px;
     display: flex;
@@ -622,17 +643,17 @@ label {
 #collectionText {
     display: flex;
     flex-direction: column;
-    max-width: 626px;
+    max-width: -webkit-fill-available;
     height: auto;
     gap: 15px;
-    width: 50%;
+    min-width: 50%;
     font-family: Inter;
     font-weight: 300;
     font-size: 16.18px;
     line-height: 150%;
     letter-spacing: normal;
     color: #032E15;
-    padding-right: 40px;
+    /* padding-right: 40px; */
 }
 
 #collectionHead {
@@ -675,7 +696,10 @@ label {
 
 #collectionImg {
     width: -webkit-fill-available;
-    max-width: 676px;
+}
+
+.specialHandle {
+    justify-content: center;
 }
 
 #collectionImg img {
@@ -727,11 +751,12 @@ label {
 }
 
 .inclFrags p {
+    margin: 0;
     font-family: Inter;
     font-weight: 300;
     font-size: 16.18px;
     line-height: 100%;
-    letter-spacing: 0%;
+    letter-spacing: normal;
     text-align: justify;
     color: #6F7577
 }
@@ -745,10 +770,15 @@ label {
     /* margin: 0px 50px; */
 }
 
+.shortImage {
+    width: 70px;
+}
+
 .inclFrags div {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    margin: 15px 0px;
 }
 
 .customBold {
@@ -787,8 +817,10 @@ label {
 }
 
 #addToCartBtn {
-    width: 610px;
+    width: 100%;
+    max-width: 610px;
     height: auto;
+    margin-top: 10px;
     border-radius: 505.64px;
     padding-top: 12.14px;
     padding-right: 24.27px;
@@ -975,7 +1007,7 @@ td:nth-child(2) {
 }
 
 #footer div {
-    min-width: 17vw;
+    /* min-width: 17vw; */
     min-height: 55px;
     top: 75px;
     left: 81px;
@@ -1025,6 +1057,9 @@ td:nth-child(2) {
     display: flex;
     width: 58%;
     height: 150px;
+    /* flex-wrap: wrap; */
+    justify-content: flex-start;
+    gap: 100px;
 }
 
 #footerSubframe_1 {
@@ -1054,7 +1089,7 @@ td:nth-child(2) {
     font-weight: 300;
     font-size: 12.14px;
     line-height: 150%;
-    letter-spacing: 0%;
+    letter-spacing: normal;
     text-decoration: underline;
     text-decoration-style: solid;
     text-decoration-thickness: auto;
@@ -1109,65 +1144,4 @@ input[type=email]::placeholder {
     font-size: 16.18px;
     line-height: 150%;
     letter-spacing: normal;
-}
-
-/* Styles for screens 600px and up (tablets, desktops, etc.) */
-@media screen and (max-width: 600px) {
-    body {
-        font-family: Inter;
-    }
-
-    .hamDropdown {
-        display: inline-block;
-    }
-
-    .navMenu {
-        display: none;
-    }
-}
-
-@media screen and (min-width: 600px) and (max-width: 768px) {
-    body {
-        font-family: Inter;
-    }
-
-    .hamDropdown {
-        display: inline-block;
-    }
-
-    .navMenu {
-        display: none;
-    }
-}
-
-
-
-
-
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-
-    /* CSS styles for tablets in portrait mode */
-    .hamDropdown {
-        display: inline-block;
-    }
-
-    .navMenu {
-        display: none;
-    }
-}
-
-
-
-
-
-@media only screen and (min-width: 900px) and (max-width: 1024px) and (orientation: landscape) {
-
-    /* CSS styles for tablets in landscape mode */
-    .hamDropdown {
-        display: inline-block;
-    }
-
-    .navMenu {
-        display: none;
-    }
 }
