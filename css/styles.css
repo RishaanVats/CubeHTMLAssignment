@@ -482,9 +482,10 @@ body {
     background: #F9F9F9;
 }
 
-.bestSellerIcon{
+.bestSellerIcon {
     position: absolute;
 }
+
 .chooseFragrance div:nth-child(2) {
     width: 100%;
     height: auto;
@@ -564,7 +565,7 @@ body {
     margin-left: 20px;
 }
 
-.labelSize{
+.labelSize {
     font-size: 17px;
 }
 
@@ -582,7 +583,8 @@ label {
     height: 56.63px;
 }
 
-#singleSubscription, #doubleSubscription {
+#singleSubscription,
+#doubleSubscription {
     display: block;
     height: auto;
     margin: 0px 40px;
@@ -590,6 +592,7 @@ label {
 
 .subscriptionHeader {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
@@ -621,6 +624,14 @@ label {
     color: #B8B8B8;
 }
 
+.wrapFull33 {
+    width: 33%;
+}
+
+.wrapFull66 {
+    width: 66%;
+}
+
 #collectionDetails {
     margin: 126px 63px;
     display: flex;
@@ -632,17 +643,17 @@ label {
 #collectionText {
     display: flex;
     flex-direction: column;
-    max-width: 626px;
+    max-width: -webkit-fill-available;
     height: auto;
     gap: 15px;
-    width: 50%;
+    min-width: 50%;
     font-family: Inter;
     font-weight: 300;
     font-size: 16.18px;
     line-height: 150%;
     letter-spacing: normal;
     color: #032E15;
-    padding-right: 40px;
+    /* padding-right: 40px; */
 }
 
 #collectionHead {
@@ -685,7 +696,10 @@ label {
 
 #collectionImg {
     width: -webkit-fill-available;
-    max-width: 50%;
+}
+
+.specialHandle {
+    justify-content: center;
 }
 
 #collectionImg img {
@@ -756,7 +770,7 @@ label {
     /* margin: 0px 50px; */
 }
 
-.shortImage{
+.shortImage {
     width: 70px;
 }
 
@@ -993,7 +1007,7 @@ td:nth-child(2) {
 }
 
 #footer div {
-    min-width: 17vw;
+    /* min-width: 17vw; */
     min-height: 55px;
     top: 75px;
     left: 81px;
@@ -1043,6 +1057,9 @@ td:nth-child(2) {
     display: flex;
     width: 58%;
     height: 150px;
+    /* flex-wrap: wrap; */
+    justify-content: flex-start;
+    gap: 100px;
 }
 
 #footerSubframe_1 {

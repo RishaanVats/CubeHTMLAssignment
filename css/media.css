@@ -1,5 +1,125 @@
+/* Styles for screens less than 600px wide (mobile devices) */
+
+@media screen and (max-width : 600px) {
+    body {
+        font-family: Inter;
+    }
+
+    .hamDropdown {
+        display: inline-block;
+    }
+
+    .navMenu {
+        display: none;
+    }
+
+    #shopNowBtn {
+        padding: 8px 14px;
+        font-size: 12.2px;
+    }
+
+    #sec10x {
+        width: 80.5px;
+    }
+
+    .sec20k {
+        width: 100px;
+    }
+
+    #sec9 {
+        width: 85px;
+    }
+
+    table th,
+    table td {
+        padding: 10px 0px;
+    }
+
+    table tr:first-child img {
+        height: 40px;
+    }
+
+    .productContainer {
+        flex-wrap: wrap;
+    }
+
+
+    #awardDesc {
+        font-size: 14px;
+    }
+
+    #awardMedal {
+        width: 12px;
+        height: 12px;
+    }
+
+    .heroContent {
+        top: 90px;
+    }
+
+    #heroContentHead {
+        font-size: 24px;
+        margin: 10px 0 40px 0;
+    }
+
+    .heroSubStats {
+        font-size: 28px;
+    }
+
+    .heroSubStatsSpan {
+        font-size: 12px;
+    }
+
+    #shopNowBtn_1 {
+        font-size: 12.2px;
+        width: 130.33px;
+        padding: 8px 12px;
+    }
+
+    #statsRibbon {
+        gap: 10px;
+        padding: 10px 30px;
+    }
+
+    .statsDesc {
+        font-size: 10px;
+    }
+
+    .dataStats {
+        font-size: 24px;
+    }
+
+    .fragOptions {
+        flex-wrap: wrap;
+    }
+
+    .wrapFull33 {
+        width: 100%;
+    }
+
+    .wrapFull66 {
+        width: 100%;
+    }
+
+    #footerEmail {
+        width: 200px;
+    }
+
+    #footerSubframe {
+        gap: 30px;
+    }
+
+    #collectionDetails {
+        flex-wrap: wrap;
+    }
+
+    /* #footerSubframe {
+        flex-wrap: wrap;
+    } */
+}
+
 /* Styles for screens 600px and up (tablets, desktops, etc.) */
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 600px) and (max-width: 690px) {
     body {
         font-family: Inter;
     }
@@ -83,9 +203,25 @@
     .dataStats {
         font-size: 24px;
     }
+
+    .fragOptions {
+        flex-wrap: wrap;
+    }
+
+    .wrapFull33 {
+        width: 100%;
+    }
+
+    .wrapFull66 {
+        width: 100%;
+    }
+
+    #collectionDetails {
+        flex-wrap: wrap;
+    }
 }
 
-@media screen and (min-width: 600px) and (max-width: 768px) {
+@media screen and (min-width: 690px) and (max-width: 768px) {
     body {
         font-family: Inter;
     }
@@ -152,6 +288,22 @@
     .dataStats {
         font-size: 28px;
     }
+
+    .fragOptions {
+        flex-wrap: wrap;
+    }
+
+    .wrapFull33 {
+        width: 100%;
+    }
+
+    .wrapFull66 {
+        width: 100%;
+    }
+
+    #collectionDetails {
+        flex-wrap: wrap;
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 870px) {
@@ -208,6 +360,22 @@
     .dataStats {
         font-size: 32px;
     }
+
+    .fragOptions {
+        flex-wrap: wrap;
+    }
+
+    .wrapFull33 {
+        width: 100%;
+    }
+
+    .wrapFull66 {
+        width: 100%;
+    }
+
+    #collectionDetails {
+        flex-wrap: wrap;
+    }
 }
 
 
@@ -225,6 +393,18 @@
 
     .chooseFragrance label {
         font-size: 14px !important;
+    }
+
+    .fragOptions {
+        flex-wrap: wrap;
+    }
+
+    .wrapFull33 {
+        width: 100%;
+    }
+
+    .wrapFull66 {
+        width: 100%;
     }
 }
 

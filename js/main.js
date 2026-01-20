@@ -73,10 +73,8 @@ function setDots() {
     let dotsHTML = "";
     Object.entries(images).forEach(([Id]) => {
         if (Number(Id) === Number(imgSet.id)) {
-            console.log("true");
             var dots = `<img id="dot-${Id}" src="./assets/icons/Dot.png" alt="Dot of selected Image" />`;
         } else {
-            console.log("false");
             var dots = `<img id="dot-${Id}" src="./assets/icons/Dot-1.png" alt="Dot of an Image" />`;
         }
         dotsHTML += dots;
@@ -124,26 +122,23 @@ document
 
 // When the user clicks on the button, toggle between hiding and showing the dropdown content
 // Hamburger Menu Click and animate
+const burger = document.querySelector(".containerHam");
+const dropdown = document.getElementById("menuDropdown");
+
 function hamburgerSwitch(ele) {
     ele.classList.toggle("change");
-    ele.setAttribute('aria-expanded', ele.classList.contains('change'))
-    document.getElementById("menuDropdown").classList.toggle("show");
+    ele.setAttribute("aria-expanded", ele.classList.contains("change"));
+    dropdown.classList.toggle("show");
 }
 
-// Close the dropdown menu if the user clicks outside of it
-window.onclick = function (event) {
-    if (!event.target.closest(".containerHam")) {
-        var dropdowns = document.getElementsByClassName("dropdownContent");
-        var i;
-        for (i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains("show")) {
-                openDropdown.classList.remove("show");
-            }
-        }
-        document.querySelector(".containerHam").classList.toggle("change");
+window.onclick = (e) => {
+    if (!e.target.closest(".containerHam")) {
+        dropdown.classList.remove("show");
+        burger.classList.remove("change");
+        burger.setAttribute("aria-expanded", "false");
     }
 };
+
 
 var leftArrow = document.getElementById("leftArrow");
 leftArrow.addEventListener("click", () => setMainImage(imgSet.id, "left"));
@@ -230,19 +225,67 @@ function addToCart() {
 
     let newHref = `https://example.com/add?type=subscription&subscription=${subscriptionType}&item=perfume&`;
 
-    if(subscriptionType === "Single Subscription"){
+    if (subscriptionType === "Single Subscription") {
         newHref += `fragrance=${fragranceType}`;
         console.log(`Added to cart: Subscription - ${subscriptionType}, Fragrance - ${fragranceType}`, newHref);
         // alert(`Added to cart: Subscription - ${subscriptionType}, Fragrance - ${fragranceType}`);
-    } else if(subscriptionType === "Double Subscription"){
+    } else if (subscriptionType === "Double Subscription") {
         newHref += `fragrance=${fragranceType1}&fragrance=${fragranceType2}`;
         console.log(`Added to cart: Subscription - ${subscriptionType}, Fragrance 1 - ${fragranceType1}, Fragrance 2 - ${fragranceType2}`, newHref);
         // alert(`Added to cart: Subscription - ${subscriptionType}, Fragrance 1 - ${fragranceType1}, Fragrance 2 - ${fragranceType2}`);
     }
 
-  const cartLink = document.getElementById('addToCart');
-  cartLink.setAttribute('href', newHref);
+    const cartLink = document.getElementById('addToCart');
+    cartLink.setAttribute('href', newHref);
 }
+
+
+// Manually adding a CSS class to handle devices with width <400px ---------------
+
+const currentWidth = window.innerWidth;
+console.log("Window width:", currentWidth, "px");
+
+const textElements = document.querySelectorAll('.collectionExpandable');
+// Define the media query (matches when width is less than 400px)
+const mediaQuery = window.matchMedia("(width < 400px)");
+
+function handleScreenChange(e) {
+    // Loop through each element found in the querySelectorAll
+
+    textElements.forEach(el => {
+        if (e.matches) {
+            // Add class for mobile
+            el.classList.add('specialHandle');
+        } else {
+            // Remove class for desktop
+            el.classList.remove('specialHandle');
+        }
+    });
+}
+
+const textElements1 = document.querySelectorAll('.productContainer')
+
+function handleScreenChange1(e) {
+    // Loop through each element found in the querySelectorAll
+
+    textElements1.forEach(el => {
+        if (e.matches) {
+            // Add class for mobile
+            el.classList.add('specialHandle');
+        } else {
+            // Remove class for desktop
+            el.classList.remove('specialHandle');
+        }
+    });
+}
+
+
+// Listen for the window crossing the 400px breakpoint
+mediaQuery.addEventListener("change", handleScreenChange);
+mediaQuery.addEventListener("change", handleScreenChange1);
+
+// Run once on page load to set the initial state
+handleScreenChange(mediaQuery);
 
 // Add an event listener for the 'resize' event testing
 // window.addEventListener('resize', function () {
