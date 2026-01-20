@@ -1,4 +1,3 @@
-
 /* Styles for screens 600px and up (tablets, desktops, etc.) */
 @media screen and (max-width: 600px) {
     body {
@@ -12,11 +11,88 @@
     .navMenu {
         display: none;
     }
+
+    #shopNowBtn {
+        padding: 8px 14px;
+        font-size: 12.2px;
+    }
+
+    #sec10x {
+        width: 80.5px;
+    }
+
+    .sec20k {
+        width: 100px;
+    }
+
+    #sec9 {
+        width: 85px;
+    }
+
+    table th,
+    table td {
+        padding: 10px 5px;
+    }
+
+    table tr:first-child img {
+        height: 65px;
+    }
+
+    .productContainer {
+        flex-wrap: wrap;
+    }
+
+
+    #awardDesc {
+        font-size: 14px;
+    }
+
+    #awardMedal {
+        width: 12px;
+        height: 12px;
+    }
+
+    .heroContent {
+        top: 90px;
+    }
+
+    #heroContentHead {
+        font-size: 24px;
+        margin: 10px 0 40px 0;
+    }
+
+    .heroSubStats {
+        font-size: 28px;
+    }
+
+    .heroSubStatsSpan {
+        font-size: 12px;
+    }
+
+    #shopNowBtn_1 {
+        font-size: 12.2px;
+        width: 130.33px;
+        padding: 8px 12px;
+    }
+
+    #statsRibbon {
+        gap: 20px;
+        padding: 10px 30px;
+    }
+
+    .dataStats {
+        font-size: 24px;
+    }
 }
 
 @media screen and (min-width: 600px) and (max-width: 768px) {
     body {
         font-family: Inter;
+    }
+
+    table th,
+    table td {
+        padding: 10px 8px;
     }
 
     .hamDropdown {
@@ -26,13 +102,59 @@
     .navMenu {
         display: none;
     }
+
+    #shopNowBtn {
+        padding: 12px 18px;
+        font-size: 14.2px;
+    }
+
+    .productContainer {
+        flex-wrap: wrap;
+    }
+
+    #awardDesc {
+        font-size: 12px;
+    }
+
+    #awardMedal {
+        width: 16px;
+        height: 16px;
+    }
+
+    .heroContent {
+        top: 90px;
+        margin: 17px 0 40px 0;
+    }
+
+    #heroContentHead {
+        font-size: 30px;
+    }
+
+    .heroSubStats {
+        font-size: 42px;
+    }
+
+    .heroSubStatsSpan {
+        font-size: 14px;
+    }
+
+    #shopNowBtn_1 {
+        font-size: 12.2px;
+        width: 130.33px;
+        padding: 10px 14px;
+    }
+
+    #statsRibbon {
+        gap: 40px;
+        padding: 15px 50px;
+    }
+
+    .dataStats {
+        font-size: 28px;
+    }
 }
 
-
-
-
-
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 870px) {
 
     /* CSS styles for tablets in portrait mode */
     .hamDropdown {
@@ -41,6 +163,68 @@
 
     .navMenu {
         display: none;
+    }
+
+    .productContainer {
+        flex-wrap: wrap;
+    }
+
+    #awardDesc {
+        font-size: 14px;
+    }
+
+    #awardMedal {
+        width: 20px;
+        height: 20px;
+    }
+
+    .heroContent {
+        top: 120px;
+    }
+
+    #heroContentHead {
+        font-size: 42px;
+        margin: 22px 0 40px 0;
+    }
+
+    .heroSubStats {
+        font-size: 56px;
+    }
+
+    .heroSubStatsSpan {
+        font-size: 18px;
+    }
+
+    #shopNowBtn_1 {
+        font-size: 14.2px;
+        width: 145.33px;
+    }
+
+    #statsRibbon {
+        gap: 85px;
+        padding: 26px 70px;
+    }
+
+    .dataStats {
+        font-size: 32px;
+    }
+}
+
+
+
+@media only screen and (min-width: 870px) and (max-width: 1024px) {
+
+    /* CSS styles for tablets in portrait mode */
+    .hamDropdown {
+        display: inline-block;
+    }
+
+    .navMenu {
+        display: none;
+    }
+
+    .chooseFragrance label {
+        font-size: 14px !important;
     }
 }
 

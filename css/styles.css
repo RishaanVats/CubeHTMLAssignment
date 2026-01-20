@@ -333,25 +333,27 @@ body {
     opacity: 1;
     top: 941px;
     left: 63.05px;
-    gap: 108px;
+    gap: 88px;
     justify-content: space-evenly;
 }
 
 #imageSection {
-    width: 610px;
+    width: auto;
+    max-width: 610px;
     height: auto;
     gap: 30px;
 }
 
 #mainImage {
     height: auto;
+    width: 100%;
     max-width: 610px;
     max-height: 673px;
     position: relative;
 }
 
 #mainImg {
-    min-width: 365px;
+    min-width: 300px;
     width: 100%;
     height: 100%;
     border-radius: 16px;
@@ -442,8 +444,9 @@ body {
 }
 
 #descSection {
-    width: 50%;
+    width: 100%;
     max-width: 610px;
+    height: auto;
 }
 
 #mostPopHead {
@@ -493,12 +496,15 @@ body {
 }
 
 .chooseFragrance label {
-    background-image: linear-gradient(90deg, #9E6718 0%, #FFB545 100%);
+    font-family: Inter;
+    background: linear-gradient(90deg, #9E6718 0%, #FFB545 100%);
     background-clip: text;
     -webkit-background-clip: text;
     /* Required for older Chrome/Safari versions */
     color: transparent;
     cursor: pointer;
+    font-size: 17px !important;
+    font-weight: 300;
 }
 
 .formRadio {
@@ -538,9 +544,6 @@ body {
 
 .formRadio label {
     width: auto;
-    height: 30px;
-    top: 796.2px;
-    left: 51.02px;
     font-family: Inter;
     font-weight: 300;
     font-size: 20px;
@@ -559,6 +562,10 @@ body {
     border: 3.01px solid #919798;
     margin-top: -5px;
     margin-left: 20px;
+}
+
+.labelSize{
+    font-size: 17px;
 }
 
 .radioRow {
