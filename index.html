@@ -107,39 +107,217 @@
                 </p>
                 <div id="mostPopHead">Most Popular</div>
                 <div>
-                    <form>
+                    <form id="subscriptionForm">
                         <div class="formRadio">
                             <div class="subscriptionHeader">
-                                <div>
-                                    <input type="radio" id="singleSubs" name="subscription" value="Single Subscription">
+                                <div class="radioRow">
+                                    <input type="radio" id="singleSubs" name="subscription" value="Single Subscription"
+                                        form="subscriptionForm">
                                     <label for="singleSubs">Single Subscription</label>
                                 </div>
                                 <div>
                                     <p class="priceTag">$99.99<span class="strikedPrice">$146</span></p>
                                 </div>
                             </div>
-                            <hr>
-                            <div id="singleSubscription">
-                                <p>T</p>
-                                <p>E</p>
-                                <p>S</p>
-                                <p>T</p>
+                            <div id="singleSubscription" class="subscriptionBody">
+                                <hr>
+                                <div id="fragranceSelection">
+                                    <p class="selectFrag">Choose a Fragrance</p>
+                                    <div class="fragranceOptions">
+                                        <form id="perfumeSingleSub">
+                                            <div class="chooseFragrance">
+                                                <!-- <img class="bestSellerIcon" src="./assets/icons/bestSeller.png" alt="Best Seller Icon" /> -->
+                                                <div>
+                                                    <input type="radio" id="fragrance1" name="fragrance"
+                                                        value="Original" form="perfumeSingleSub" checked>
+                                                    <label for="fragrance1">Original</label>
+                                                </div>
+                                                <div>
+                                                    <img src="./assets/icons/originalPerfume.png"
+                                                        alt="Original Perfume Icon" />
+                                                </div>
+                                            </div>
+                                            <div class="chooseFragrance">
+                                                <div>
+                                                    <input type="radio" id="fragrance2" name="fragrance" value="Lily"
+                                                        form="perfumeSingleSub">
+                                                    <label for="fragrance2">Lily</label>
+                                                </div>
+                                                <div>
+                                                    <img src="./assets/icons/LilyPerfume.png" alt="Lily Perfume Icon" />
+                                                </div>
+                                            </div>
+                                            <div class="chooseFragrance">
+                                                <div>
+                                                    <input type="radio" id="fragrance3" name="fragrance" value="Rose"
+                                                        form="perfumeSingleSub">
+                                                    <label for="fragrance3">Rose</label>
+                                                </div>
+                                                <div>
+                                                    <img src="./assets/icons/rosePerfume.png" alt="Rose Perfume Icon" />
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p class="selectFrag">Whats's Included</p>
+                                    <div class="fragOptions">
+                                        <div class="inclFrags" style="width: 33%;">
+                                            <p>Every 30 Days</p>
+                                            <img src="./assets/icons/originalPerfume.png" alt="Original Perfume Icon" />
+                                        </div>
+                                        <div class="inclFrags" style="width: 66%;">
+                                            <p>One Time <span class="customBold">(Free)</span></p>
+                                            <div>
+                                                <img src="./assets/icons/originalPerfume.png"
+                                                    alt="Original Perfume Icon" />
+                                                <img src="./assets/icons/LilyPerfume.png" alt="Lily Perfume Icon" />
+                                                <img src="./assets/icons/rosePerfume.png" alt="Rose Perfume Icon" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="checkPromises">
+                                    <p><img class="sealCheck" src="./assets/icons/SealCheck1.png"
+                                            alt="seal check icon">&nbsp;1 Bottle Shipped Monthly</p>
+                                    <p><img class="sealCheck" src="./assets/icons/SealCheck1.png"
+                                            alt="seal check icon">&nbsp;<span class="customBold">Free </span> Sampler
+                                        for Original, Lily And Rose Fragrances</p>
+                                    <p class="customBold"><img class="sealCheck" src="./assets/icons/SealCheck1.png"
+                                            alt="seal check icon">&nbsp;50% OFF Shipping</p>
+                                    <p><img class="sealCheck" src="./assets/icons/SealCheck1.png"
+                                            alt="seal check icon">&nbsp;Pause or Cancel Anytime After 3 Months Minimum
+                                    </p>
+                                    <p><img class="sealCheck" src="./assets/icons/SealCheck1.png"
+                                            alt="seal check icon">&nbsp;28 Day Money Back Guarantee*</p>
+                                </div>
                             </div>
                         </div>
                         <div class="formRadio">
                             <div class="subscriptionHeader">
                                 <div>
-                                    <input type="radio" id="doubleSubs" name="subscription" value="Double Subscription">
+                                    <input type="radio" id="doubleSubs" name="subscription" value="Double Subscription"
+                                        form="subscriptionForm">
                                     <label for="doubleSubs">Double Subscription</label>
                                 </div>
                                 <div>
                                     <p class="priceTag">$169.99<span class="strikedPrice">$146</span></p>
                                 </div>
                             </div>
-                            <hr>
+                            <div id="doubleSubscription" class="subscriptionBody">
+                                <hr>
+                                <div class="fragranceSelection">
+                                    <p class="selectFrag">Choose Fragrance 1</p>
+                                    <div class="fragranceOptions">
+                                        <form id="perfumeDoubleSub1">
+                                            <div class="chooseFragrance">
+                                                <div>
+                                                    <input type="radio" id="fragrance1" name="fragrance1"
+                                                        value="Original" form="perfumeDoubleSub1" checked>
+                                                    <label for="fragrance1">Original</label>
+                                                </div>
+                                                <div>
+                                                    <img src="./assets/icons/originalPerfume.png"
+                                                        alt="Original Perfume Icon" />
+                                                </div>
+                                            </div>
+                                            <div class="chooseFragrance">
+                                                <div>
+                                                    <input type="radio" id="fragrance2" name="fragrance1" value="Lily"
+                                                        form="perfumeDoubleSub1">
+                                                    <label for="fragrance2">Lily</label>
+                                                </div>
+                                                <div>
+                                                    <img src="./assets/icons/LilyPerfume.png" alt="Lily Perfume Icon" />
+                                                </div>
+                                            </div>
+                                            <div class="chooseFragrance">
+                                                <div>
+                                                    <input type="radio" id="fragrance3" name="fragrance1" value="Rose"
+                                                        form="perfumeDoubleSub1">
+                                                    <label for="fragrance3">Rose</label>
+                                                </div>
+                                                <div>
+                                                    <img src="./assets/icons/rosePerfume.png" alt="Rose Perfume Icon" />
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <p class="selectFrag">Choose Fragrance 2</p>
+                                    <div class="fragOptions">
+                                        <form id="perfumeDoubleSub2">
+                                            <div class="chooseFragrance">
+                                                <div>
+                                                    <input type="radio" id="fragrance1" name="fragrance2"
+                                                        value="Original" form="perfumeDoubleSub2" checked>
+                                                    <label for="fragrance1">Original</label>
+                                                </div>
+                                                <div>
+                                                    <img src="./assets/icons/originalPerfume.png"
+                                                        alt="Original Perfume Icon" />
+                                                </div>
+                                            </div>
+                                            <div class="chooseFragrance">
+                                                <div>
+                                                    <input type="radio" id="fragrance2" name="fragrance2" value="Lily"
+                                                        form="perfumeDoubleSub2">
+                                                    <label for="fragrance2">Lily</label>
+                                                </div>
+                                                <div>
+                                                    <img src="./assets/icons/LilyPerfume.png" alt="Lily Perfume Icon" />
+                                                </div>
+                                            </div>
+                                            <div class="chooseFragrance">
+                                                <div>
+                                                    <input type="radio" id="fragrance3" name="fragrance2" value="Rose"
+                                                        form="perfumeDoubleSub2">
+                                                    <label for="fragrance3">Rose</label>
+                                                </div>
+                                                <div>
+                                                    <img src="./assets/icons/rosePerfume.png" alt="Rose Perfume Icon" />
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p class="selectFrag">Whats's Included</p>
+                                    <div class="fragOptions">
+                                        <div class="inclFrags" style="width: 33%;">
+                                            <p>Every 30 Days</p>
+                                            <img src="./assets/icons/originalPerfume.png" alt="Original Perfume Icon" />
+                                        </div>
+                                        <div class="inclFrags" style="width: 66%;">
+                                            <p>One Time <span class="customBold">(Free)</span></p>
+                                            <div>
+                                                <img src="./assets/icons/originalPerfume.png"
+                                                    alt="Original Perfume Icon" />
+                                                <img src="./assets/icons/LilyPerfume.png" alt="Lily Perfume Icon" />
+                                                <img src="./assets/icons/rosePerfume.png" alt="Rose Perfume Icon" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="checkPromises">
+                                    <p><img class="sealCheck" src="./assets/icons/SealCheck1.png"
+                                            alt="seal check icon">&nbsp;1 Bottle Shipped Monthly</p>
+                                    <p><img class="sealCheck" src="./assets/icons/SealCheck1.png"
+                                            alt="seal check icon">&nbsp;<span class="customBold">Free </span> Sampler
+                                        for Original, Lily And Rose Fragrances</p>
+                                    <p class="customBold"><img class="sealCheck" src="./assets/icons/SealCheck1.png"
+                                            alt="seal check icon">&nbsp;50% OFF Shipping</p>
+                                    <p><img class="sealCheck" src="./assets/icons/SealCheck1.png"
+                                            alt="seal check icon">&nbsp;Pause or Cancel Anytime After 3 Months Minimum
+                                    </p>
+                                    <p><img class="sealCheck" src="./assets/icons/SealCheck1.png"
+                                            alt="seal check icon">&nbsp;28 Day Money Back Guarantee*</p>
+                                </div>
+                            </div>
                         </div>
                     </form>
                 </div>
+                <button id="addToCartBtn">Add to Cart</button>
             </div>
         </section>
         <section id="collectionDetails">
@@ -198,64 +376,64 @@
                     <th><img src="./assets/icons/bella.png" alt="Bella perfume image"></th>
                     <th><img src="./assets/icons/daisies.png" alt="Daisies perfume image"></th>
                 </tr>
-                <tr>
+                <tr style="vertical-align: top;">
                     <th></th>
-                    <th>GTG</th>
-                    <th>Arose</th>
-                    <th>Bella</th>
-                    <th>Daisies</th>
+                    <th id="gtgTableHead">GTG</th>
+                    <th class="tableHead">Arose</th>
+                    <th class="tableHead">Bella</th>
+                    <th class="tableHead">Daisies</th>
                 </tr>
                 <tr>
-                    <td>Potency Concentration</td>
+                    <td class="rowHead">Potency Concentration</td>
                     <td>10x</td>
                     <td>1x</td>
                     <td>1x</td>
                     <td>10x</td>
                 </tr>
                 <tr>
-                    <td>Longevity</td>
+                    <td class="rowHead">Longevity</td>
                     <td><img src="./assets/icons/gtgTick.svg" alt="present"></td>
                     <td><img src="./assets/icons/cross.svg" alt="absent"></td>
                     <td><img src="./assets/icons/cross.svg" alt="absent"></td>
                     <td><img src="./assets/icons/tick.svg" alt="present"></td>
                 </tr>
                 <tr>
-                    <td>Sillage</td>
+                    <td class="rowHead">Sillage</td>
                     <td><img src="./assets/icons/gtgTick.svg" alt="present"></td>
                     <td><img src="./assets/icons/cross.svg" alt="absent"></td>
                     <td><img src="./assets/icons/cross.svg" alt="absent"></td>
                     <td><img src="./assets/icons/cross.svg" alt="absent"></td>
                 </tr>
                 <tr>
-                    <td>Bottle Design Score</td>
+                    <td class="rowHead">Bottle Design Score</td>
                     <td>9</td>
                     <td>5</td>
                     <td>6</td>
                     <td>2</td>
                 </tr>
                 <tr>
-                    <td>Blend and Harmony</td>
+                    <td class="rowHead">Blend and Harmony</td>
                     <td><img src="./assets/icons/gtgTick.svg" alt="present"></td>
                     <td><img src="./assets/icons/cross.svg" alt="absent"></td>
                     <td><img src="./assets/icons/cross.svg" alt="absent"></td>
                     <td><img src="./assets/icons/cross.svg" alt="absent"></td>
                 </tr>
                 <tr>
-                    <td>Skin Compatibility</td>
+                    <td class="rowHead">Skin Compatibility</td>
                     <td><img src="./assets/icons/gtgTick.svg" alt="present"></td>
                     <td><img src="./assets/icons/cross.svg" alt="absent"></td>
                     <td><img src="./assets/icons/cross.svg" alt="absent"></td>
                     <td><img src="./assets/icons/cross.svg" alt="absent"></td>
                 </tr>
                 <tr>
-                    <td>Scent Profile</td>
+                    <td class="rowHead">Scent Profile</td>
                     <td><img src="./assets/icons/gtgTick.svg" alt="present"></td>
                     <td><img src="./assets/icons/tick.svg" alt="present"></td>
                     <td><img src="./assets/icons/cross.svg" alt="absent"></td>
                     <td><img src="./assets/icons/cross.svg" alt="absent"></td>
                 </tr>
                 <tr>
-                    <td>Price vs. Quality</td>
+                    <td class="rowHead">Price vs. Quality</td>
                     <td><img src="./assets/icons/gtgTick.svg" alt="present"></td>
                     <td><img src="./assets/icons/tick.svg" alt="present"></td>
                     <td><img src="./assets/icons/cross.svg" alt="absent"></td>
