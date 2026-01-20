@@ -218,7 +218,6 @@ body {
     gap: 8px;
     background: linear-gradient(180deg, rgba(3, 46, 21, 0.6) 0%, rgba(1, 102, 48, 0.6) 100%);
     border: 0.5px solid;
-
     border-image-source: linear-gradient(90.05deg, rgba(255, 255, 255, 0.5) 0.04%, rgba(252, 252, 252, 0.4) 102.54%);
 
     /* background: linear-gradient(to top, #016630 0%, #032E15 100%); */
@@ -325,7 +324,7 @@ body {
 /* Product Section */
 .productContainer {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     width: -webkit-fill-available;
     max-width: 100%;
     margin: 125px 63px 0;
@@ -334,6 +333,7 @@ body {
     top: 941px;
     left: 63.05px;
     gap: 108px;
+    justify-content: space-evenly;
 }
 
 #imageSection {
@@ -343,13 +343,14 @@ body {
 }
 
 #mainImage {
-    height: 673px;
+    height: auto;
     max-width: 610px;
     max-height: 673px;
     position: relative;
 }
 
 #mainImg {
+    min-width: 365px;
     width: 100%;
     height: 100%;
     border-radius: 16px;
@@ -360,7 +361,6 @@ body {
     align-items: center;
     position: absolute;
     justify-content: space-between;
-    width: 100%;
     height: 39px;
     bottom: 9px;
     left: 29px;
@@ -368,7 +368,6 @@ body {
     border-bottom-left-radius: 15px;
     padding: 12px 29px;
     margin-left: -29px;
-    width: 100%;
     /* Fallback for all browsers */
     width: -moz-available;
     /* Firefox prefix */
@@ -394,6 +393,7 @@ body {
 #thumbnailImages {
     cursor: pointer;
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
     align-items: stretch;
     width: fit-content;
@@ -458,10 +458,51 @@ body {
     align-content: center;
 }
 
+.fragranceOptions {
+    display: inline-flex;
+    gap: 8px
+}
+
+.chooseFragrance {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    width: 127px;
+    height: 145.89px;
+    font-family: Inter;
+    font-weight: 300;
+    font-size: 13.2px;
+    line-height: 100%;
+    letter-spacing: normal;
+    text-align: justify;
+    background: #F9F9F9;
+}
+
+.bestSellerIcon{
+    position: absolute;
+}
+.chooseFragrance div:nth-child(2) {
+    width: 100%;
+    height: auto;
+    max-width: 127px;
+    max-height: 127px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.chooseFragrance label {
+    background-image: linear-gradient(90deg, #9E6718 0%, #FFB545 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    /* Required for older Chrome/Safari versions */
+    color: transparent;
+    cursor: pointer;
+}
+
 .formRadio {
     width: 609.96px;
-    height: 56.63px;
-    top: 783px;
+    height: auto;
     border-radius: 6.07px;
     background: #FFFFFF;
     border: 1.01px solid #B8B8B8;
@@ -471,17 +512,26 @@ body {
 .formRadio input {
     width: 17px;
     height: 17px;
+    margin-right: 10px;
     top: 804.24px;
     left: 22.18px;
     border-width: 0.81px;
     border: 0.81px solid #00C950;
-    border-image-source: linear-gradient(180deg, rgba(3, 46, 21, 0.6) 0%, rgba(1, 102, 48, 0.6) 100%);
-    background-image:
+    /* border-image-source: linear-gradient(180deg, rgba(3, 46, 21, 0.6) 0%, rgba(1, 102, 48, 0.6) 100%); */
+    /* background-image:
         radial-gradient(white, white),
-        linear-gradient(135deg, #032E15, #016630);
-    background-origin: border-box;
-    background-clip: content-box, border-box;
+        linear-gradient(135deg, #032E15, #016630); */
+    /* background-origin: border-box;
+    background-clip: content-box, border-box; */
     cursor: pointer;
+}
+
+.formRadio input[type="radio"] {
+    appearance: auto;
+}
+
+.formRadio input[type="radio"] {
+    accent-color: #0D542B;
 }
 
 .formRadio label {
@@ -504,13 +554,28 @@ body {
     top: 106.19px;
     left: 53.23px;
     border-width: 1.01px;
-    border: 1.01px solid #919798;
+    border: 3.01px solid #919798;
     margin-top: -5px;
-    margin-left: 45px;
+    margin-left: 20px;
 }
 
-#singleSubscription {
+.radioRow {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+label {
+    vertical-align: middle;
+}
+
+.formRadioCollapsed {
+    height: 56.63px;
+}
+
+#singleSubscription, #doubleSubscription {
     display: block;
+    margin: 0px 40px;
 }
 
 .subscriptionHeader {
@@ -619,6 +684,128 @@ body {
     border-radius: 30px;
 }
 
+.subscriptionBody {
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+    transition: height 0.32s ease, opacity 0.25s ease, transform 0.25s ease;
+    transform: translateY(-6px);
+}
+
+.formRadio.expanded .subscriptionBody {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.selectFrag {
+    font-family: Inter;
+    font-weight: 300;
+    font-size: 16.18px;
+    line-height: 100%;
+    letter-spacing: normal;
+    text-align: justify;
+    color: #032E15;
+}
+
+.fragranceSelection {
+    margin-left: 0px;
+}
+
+.fragOptions {
+    display: inline-flex;
+    /* flex-wrap: wrap; */
+    gap: 8px;
+    margin-top: 16px;
+    width: -webkit-fill-available;
+}
+
+.inclFrags {
+    border-radius: 6px;
+    border: 1.01px solid #919798;
+    padding: 10px;
+    text-align: center;
+}
+
+.inclFrags p {
+    font-family: Inter;
+    font-weight: 300;
+    font-size: 16.18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: justify;
+    color: #6F7577
+}
+
+.inclFrags img {
+    max-width: 84px;
+    width: 100%;
+    height: auto;
+    max-height: 220px;
+    text-align: center;
+    /* margin: 0px 50px; */
+}
+
+.inclFrags div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.customBold {
+    font-weight: 700;
+    color: #032E15;
+}
+
+.sealCheck {
+    width: 12px;
+    height: 12px;
+    top: 0.88px;
+    left: 0.88px;
+}
+
+.checkPromises {
+    font-family: Inter;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.9px;
+    text-align: justify;
+    text-transform: capitalize;
+    margin: 20px 0;
+}
+
+.checkPromises p {
+    margin: 8px 0;
+}
+
+#perfumeDoubleSub1 {
+    display: inline-flex;
+}
+
+#perfumeDoubleSub2 {
+    display: inline-flex;
+}
+
+#addToCartBtn {
+    width: 610px;
+    height: auto;
+    border-radius: 505.64px;
+    padding-top: 12.14px;
+    padding-right: 24.27px;
+    padding-bottom: 12.14px;
+    padding-left: 24.27px;
+    border-bottom-width: 1.01px;
+    color: #FFFFFF;
+    background: linear-gradient(180deg, #032E15 0%, #016630 100%);
+    border: none;
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 18.2px;
+    line-height: 28px;
+    letter-spacing: 0px;
+    cursor: pointer;
+}
+
 /* RIBBON STYLES */
 
 #statsRibbon {
@@ -662,6 +849,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    align-content: center;
 }
 
 #choiceHead {
@@ -669,6 +857,25 @@ body {
     flex-direction: column;
     align-items: center;
     margin-bottom: 40px;
+}
+
+#gtgTableHead {
+    font-family: Inter;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-align: center;
+}
+
+.tableHead {
+    font-family: Inter;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 19.16px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #666666;
 }
 
 #dashed {
@@ -701,10 +908,8 @@ body {
     width: 194.54px;
     height: 56.27px;
     border-radius: 505.64px;
-    padding-top: 12.14px;
-    padding-right: 24.27px;
-    padding-bottom: 12.14px;
-    padding-left: 24.27px;
+    padding: 12.14px 24.27px;
+    margin: 80px 0 30px;
     border-bottom-width: 1.01px;
     background: linear-gradient(180deg, #032E15 0%, #016630 100%);
     color: #FFFFFF;
@@ -716,6 +921,7 @@ body {
 
 table {
     border-collapse: collapse;
+    max-width: 950px;
     width: 100%;
     border: none;
 }
@@ -724,18 +930,41 @@ table th,
 table td {
     border: none;
     padding: 10px 12px;
+    text-align: center;
     /* adjust to taste */
 }
 
 table tr {
     border-bottom: 1px dashed #bcbcbc;
+    height: 50px;
     /* change color as needed */
 }
 
-table tr:last-child {
+table tr:first-child {
     border-bottom: none;
     /* optional */
 }
+
+table tr:first-child,
+table td:first-child {
+    /* Override alignment for the first column */
+    text-align: left;
+}
+
+.rowHead {
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19.16px;
+    letter-spacing: 0px;
+    color: #666666;
+}
+
+th:nth-child(2),
+td:nth-child(2) {
+    background-color: #F0FDF4;
+}
+
 
 
 /* FOOTER STYLES */

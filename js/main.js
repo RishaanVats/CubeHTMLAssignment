@@ -181,9 +181,61 @@ const observer = new IntersectionObserver(entries => {
 
 counters.forEach(el => observer.observe(el));
 
-// Table of Why GTG is the #1 choice Section Code ----------------------------------
+// Most popular order section code ------------------------------------------------
+const radios = document.querySelectorAll('input[name="subscription"]');
+const boxes = document.querySelectorAll('.formRadio');
 
+function expandSection(el) {
+    el.style.height = el.scrollHeight + 'px';
+}
 
+function collapseSection(el) {
+    el.style.height = '0px';
+}
+
+window.addEventListener('DOMContentLoaded', () => {
+    // Select first by default
+    radios[0].click();
+    // radios[0].checked = true;
+    // boxes[0].classList.add('expanded');
+    // expandSection(boxes[0].querySelector('.subscriptionBody'));
+});
+
+radios.forEach(radio => {
+    radio.addEventListener('click', () => {
+
+        // Collapse all
+        boxes.forEach(box => {
+            box.classList.remove('expanded');
+            collapseSection(box.querySelector('.subscriptionBody'));
+        });
+
+        // Expand selected
+        const selectedBox = radio.closest('.formRadio');
+        selectedBox.classList.add('expanded');
+        expandSection(selectedBox.querySelector('.subscriptionBody'));
+    });
+});
+
+// Add to Cart Section ------------------------------------------------
+
+document.getElementById("addToCartBtn").addEventListener("click", addToCart);
+
+function addToCart() {
+    const subscriptionType = document.querySelector('input[name="subscription"]:checked').value;
+
+    const fragranceType = document.querySelector('input[name="fragrance"]:checked').value;
+    const fragranceType1 = document.querySelector('input[name="fragrance1"]:checked').value;
+    const fragranceType2 = document.querySelector('input[name="fragrance2"]:checked').value;
+
+    if(subscriptionType === "Single Subscription"){
+        console.log(`Added to cart: Subscription - ${subscriptionType}, Fragrance - ${fragranceType}`);
+        alert(`Added to cart: Subscription - ${subscriptionType}, Fragrance - ${fragranceType}`);
+    } else if(subscriptionType === "Double Subscription"){
+        console.log(`Added to cart: Subscription - ${subscriptionType}, Fragrance 1 - ${fragranceType1}, Fragrance 2 - ${fragranceType2}`);
+        alert(`Added to cart: Subscription - ${subscriptionType}, Fragrance 1 - ${fragranceType1}, Fragrance 2 - ${fragranceType2}`);
+    }
+}
 
 // Add an event listener for the 'resize' event testing
 // window.addEventListener('resize', function () {
