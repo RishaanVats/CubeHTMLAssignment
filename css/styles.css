@@ -125,7 +125,7 @@ body {
     font-weight: 800;
     font-size: 30px;
     line-height: 150%;
-    letter-spacing: 0%;
+    letter-spacing: nornmal;
     background: linear-gradient(180deg, rgba(3, 46, 21, 0.6) 0%, rgba(1, 102, 48, 0.6) 100%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -196,7 +196,8 @@ body {
     background-size: 100% auto;
     background-position: left top;
     background-clip: border-box;
-    min-height: 100vh;
+    /* min-height: 100vh; */
+    aspect-ratio: 1456 / 794;
 }
 
 .heroContent {
@@ -393,7 +394,7 @@ body {
 #thumbnailImages {
     cursor: pointer;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     align-items: stretch;
     width: fit-content;
@@ -426,7 +427,7 @@ body {
     font-weight: 300;
     font-size: 13px;
     line-height: 100%;
-    letter-spacing: 0%;
+    letter-spacing: normal;
     color: #032E15;
 }
 
@@ -434,14 +435,14 @@ body {
     font-weight: 300;
     font-size: 16.18px;
     line-height: 100%;
-    letter-spacing: 0%;
+    letter-spacing: normal;
     text-align: justify;
     color: #032E15;
     margin-top: 20px 0 31px;
 }
 
 #descSection {
-    width: fit-content;
+    width: 50%;
     max-width: 610px;
 }
 
@@ -467,7 +468,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
-    width: 127px;
+    max-width: 127px;
     height: 145.89px;
     font-family: Inter;
     font-weight: 300;
@@ -501,7 +502,8 @@ body {
 }
 
 .formRadio {
-    width: 609.96px;
+    max-width: 609.96px;
+    width: auto;
     height: auto;
     border-radius: 6.07px;
     background: #FFFFFF;
@@ -535,7 +537,7 @@ body {
 }
 
 .formRadio label {
-    width: 281.84px;
+    width: auto;
     height: 30px;
     top: 796.2px;
     left: 51.02px;
@@ -575,6 +577,7 @@ label {
 
 #singleSubscription, #doubleSubscription {
     display: block;
+    height: auto;
     margin: 0px 40px;
 }
 
@@ -675,7 +678,7 @@ label {
 
 #collectionImg {
     width: -webkit-fill-available;
-    max-width: 676px;
+    max-width: 50%;
 }
 
 #collectionImg img {
@@ -727,11 +730,12 @@ label {
 }
 
 .inclFrags p {
+    margin: 0;
     font-family: Inter;
     font-weight: 300;
     font-size: 16.18px;
     line-height: 100%;
-    letter-spacing: 0%;
+    letter-spacing: normal;
     text-align: justify;
     color: #6F7577
 }
@@ -745,10 +749,15 @@ label {
     /* margin: 0px 50px; */
 }
 
+.shortImage{
+    width: 70px;
+}
+
 .inclFrags div {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    margin: 15px 0px;
 }
 
 .customBold {
@@ -787,8 +796,10 @@ label {
 }
 
 #addToCartBtn {
-    width: 610px;
+    width: 100%;
+    max-width: 610px;
     height: auto;
+    margin-top: 10px;
     border-radius: 505.64px;
     padding-top: 12.14px;
     padding-right: 24.27px;
@@ -1054,7 +1065,7 @@ td:nth-child(2) {
     font-weight: 300;
     font-size: 12.14px;
     line-height: 150%;
-    letter-spacing: 0%;
+    letter-spacing: normal;
     text-decoration: underline;
     text-decoration-style: solid;
     text-decoration-thickness: auto;
@@ -1109,65 +1120,4 @@ input[type=email]::placeholder {
     font-size: 16.18px;
     line-height: 150%;
     letter-spacing: normal;
-}
-
-/* Styles for screens 600px and up (tablets, desktops, etc.) */
-@media screen and (max-width: 600px) {
-    body {
-        font-family: Inter;
-    }
-
-    .hamDropdown {
-        display: inline-block;
-    }
-
-    .navMenu {
-        display: none;
-    }
-}
-
-@media screen and (min-width: 600px) and (max-width: 768px) {
-    body {
-        font-family: Inter;
-    }
-
-    .hamDropdown {
-        display: inline-block;
-    }
-
-    .navMenu {
-        display: none;
-    }
-}
-
-
-
-
-
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-
-    /* CSS styles for tablets in portrait mode */
-    .hamDropdown {
-        display: inline-block;
-    }
-
-    .navMenu {
-        display: none;
-    }
-}
-
-
-
-
-
-@media only screen and (min-width: 900px) and (max-width: 1024px) and (orientation: landscape) {
-
-    /* CSS styles for tablets in landscape mode */
-    .hamDropdown {
-        display: inline-block;
-    }
-
-    .navMenu {
-        display: none;
-    }
 }

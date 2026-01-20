@@ -1,0 +1,73 @@
+
+/* Styles for screens 600px and up (tablets, desktops, etc.) */
+@media screen and (max-width: 600px) {
+    body {
+        font-family: Inter;
+    }
+
+    .hamDropdown {
+        display: inline-block;
+    }
+
+    .navMenu {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    body {
+        font-family: Inter;
+    }
+
+    .hamDropdown {
+        display: inline-block;
+    }
+
+    .navMenu {
+        display: none;
+    }
+}
+
+
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+    /* CSS styles for tablets in portrait mode */
+    .hamDropdown {
+        display: inline-block;
+    }
+
+    .navMenu {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+
+    /* CSS styles for tablets in portrait mode */
+    /* .hamDropdown {
+        display: inline-block;
+    }
+
+    .navMenu {
+        display: none;
+    } */
+}
+
+
+
+
+
+@media only screen and (min-width: 900px) and (max-width: 1024px) and (orientation: landscape) {
+
+    /* CSS styles for tablets in landscape mode */
+    .hamDropdown {
+        display: inline-block;
+    }
+
+    .navMenu {
+        display: none;
+    }
+}

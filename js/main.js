@@ -228,13 +228,20 @@ function addToCart() {
     const fragranceType1 = document.querySelector('input[name="fragrance1"]:checked').value;
     const fragranceType2 = document.querySelector('input[name="fragrance2"]:checked').value;
 
+    let newHref = `https://example.com/add?type=subscription&subscription=${subscriptionType}&item=perfume&`;
+
     if(subscriptionType === "Single Subscription"){
-        console.log(`Added to cart: Subscription - ${subscriptionType}, Fragrance - ${fragranceType}`);
-        alert(`Added to cart: Subscription - ${subscriptionType}, Fragrance - ${fragranceType}`);
+        newHref += `fragrance=${fragranceType}`;
+        console.log(`Added to cart: Subscription - ${subscriptionType}, Fragrance - ${fragranceType}`, newHref);
+        // alert(`Added to cart: Subscription - ${subscriptionType}, Fragrance - ${fragranceType}`);
     } else if(subscriptionType === "Double Subscription"){
-        console.log(`Added to cart: Subscription - ${subscriptionType}, Fragrance 1 - ${fragranceType1}, Fragrance 2 - ${fragranceType2}`);
-        alert(`Added to cart: Subscription - ${subscriptionType}, Fragrance 1 - ${fragranceType1}, Fragrance 2 - ${fragranceType2}`);
+        newHref += `fragrance=${fragranceType1}&fragrance=${fragranceType2}`;
+        console.log(`Added to cart: Subscription - ${subscriptionType}, Fragrance 1 - ${fragranceType1}, Fragrance 2 - ${fragranceType2}`, newHref);
+        // alert(`Added to cart: Subscription - ${subscriptionType}, Fragrance 1 - ${fragranceType1}, Fragrance 2 - ${fragranceType2}`);
     }
+
+  const cartLink = document.getElementById('addToCart');
+  cartLink.setAttribute('href', newHref);
 }
 
 // Add an event listener for the 'resize' event testing
