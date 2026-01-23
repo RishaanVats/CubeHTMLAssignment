@@ -240,54 +240,10 @@ function addToCart() {
 }
 
 
-// Manually adding a CSS class to handle devices with width <400px ---------------
-
-const currentWidth = window.innerWidth;
-console.log("Window width:", currentWidth, "px");
-
-const textElements = document.querySelectorAll('.collectionExpandable');
-// Define the media query (matches when width is less than 400px)
-const mediaQuery = window.matchMedia("(width < 400px)");
-
-function handleScreenChange(e) {
-    // Loop through each element found in the querySelectorAll
-
-    textElements.forEach(el => {
-        if (e.matches) {
-            // Add class for mobile
-            el.classList.add('specialHandle');
-        } else {
-            // Remove class for desktop
-            el.classList.remove('specialHandle');
-        }
-    });
-}
-
-const textElements1 = document.querySelectorAll('.productContainer')
-
-function handleScreenChange1(e) {
-    // Loop through each element found in the querySelectorAll
-
-    textElements1.forEach(el => {
-        if (e.matches) {
-            // Add class for mobile
-            el.classList.add('specialHandle');
-        } else {
-            // Remove class for desktop
-            el.classList.remove('specialHandle');
-        }
-    });
-}
-
-
-// Listen for the window crossing the 400px breakpoint
-mediaQuery.addEventListener("change", handleScreenChange);
-mediaQuery.addEventListener("change", handleScreenChange1);
-
-// Run once on page load to set the initial state
-handleScreenChange(mediaQuery);
-
 // Add an event listener for the 'resize' event testing
+
+// const currentWidth = window.innerWidth;
+// console.log("Window width:", currentWidth, "px");
 // window.addEventListener('resize', function () {
 //     const currentWidth = window.innerWidth;
 //     console.log("Window width:", currentWidth, "px");
