@@ -1,4 +1,25 @@
 /* Styles for screens less than 600px wide (mobile devices) */
+@media (max-width: 399px) {
+
+    .collectionExpandable,
+    .productContainer {
+        justify-content: center;
+    }
+
+    .collectionExpandable img {
+        right: auto;
+    }
+
+    #awardDesc {
+        font-size: 10px;
+    }
+
+    #awardMedal {
+        width: 8px;
+        height: 8px;
+    }
+}
+
 
 @media screen and (max-width : 600px) {
     body {
@@ -68,6 +89,7 @@
 
     .heroSubStatsSpan {
         font-size: 12px;
+        margin-top: 10px;
     }
 
     #shopNowBtn_1 {
@@ -110,6 +132,10 @@
     }
 
     #collectionDetails {
+        flex-wrap: wrap;
+    }
+
+    .fragranceOptions {
         flex-wrap: wrap;
     }
 
@@ -183,10 +209,12 @@
 
     .heroSubStats {
         font-size: 28px;
+        margin-top: 10px;
     }
 
     .heroSubStatsSpan {
         font-size: 12px;
+        margin-top: 10px;
     }
 
     #shopNowBtn_1 {
