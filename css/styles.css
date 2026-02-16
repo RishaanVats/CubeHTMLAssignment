@@ -18,6 +18,19 @@ body {
     }
 }
 
+/* Standard utility to hide elements visually but keep them for screen readers */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
 /* Hamburger CSS */
 
 .containerHam {
@@ -468,6 +481,14 @@ body {
     gap: 8px
 }
 
+.fragranceChoice{
+    display: inline-flex;
+    border: none;
+    gap: 8px;
+    padding: 0px;
+    margin: 0px;
+}
+
 .chooseFragrance {
     display: flex;
     flex-wrap: wrap;
@@ -481,10 +502,19 @@ body {
     letter-spacing: normal;
     text-align: justify;
     background: #F9F9F9;
+    border-radius: 5px;
 }
 
 .bestSellerIcon {
     position: absolute;
+    top: 45px;
+    left: 67px;
+}
+
+.chooseFragrance div:nth-child(1) {
+    display: inline-flex;
+    align-items: center; /* This centers them vertically */
+    /* gap: 8px;            This adds a nice consistent space between them */
 }
 
 .chooseFragrance div:nth-child(2) {
@@ -499,13 +529,13 @@ body {
 
 .chooseFragrance label {
     font-family: Inter;
-    background: linear-gradient(90deg, #9E6718 0%, #FFB545 100%);
+    /* background: linear-gradient(90deg, #9E6718 0%, #FFB545 100%); */
     background-clip: text;
     -webkit-background-clip: text;
     /* Required for older Chrome/Safari versions */
-    color: transparent;
+    color:#919798 !important;
     cursor: pointer;
-    font-size: 17px !important;
+    font-size: 13px !important;
     font-weight: 300;
 }
 
@@ -923,6 +953,17 @@ label {
     margin: 30px 0 10px;
 }
 
+#dashed-white {
+    font-family: Oxanium;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-align: center;
+    color: inherit;
+    margin: 30px 0 10px;
+}
+
 #gtgChoiceLine {
     font-family: Inter;
     font-weight: 600;
@@ -1057,7 +1098,7 @@ td:nth-child(2) {
 
 #footerSubframe {
     display: flex;
-    width: 58%;
+    width: 48%;
     height: 150px;
     /* flex-wrap: wrap; */
     justify-content: flex-start;
@@ -1066,7 +1107,7 @@ td:nth-child(2) {
 
 #footerSubframe_1 {
     color: #FFFFFF;
-    width: 40%;
+    min-width: 40%;
 }
 
 #footerSubTag {
@@ -1146,4 +1187,34 @@ input[type=email]::placeholder {
     font-size: 16.18px;
     line-height: 150%;
     letter-spacing: normal;
+}
+
+.heart {
+    color: #e25555;
+    display: inline-block;
+    animation: heartbeat 1.5s infinite;
+}
+
+@keyframes heartbeat {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+#footerCredit {
+    color: #ffffff;
+    font-size: inherit;
+    text-align: center;
+}
+
+#footerCredit a {
+    color: #ffffff;
 }

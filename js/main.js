@@ -239,6 +239,8 @@ function addToCart() {
     cartLink.setAttribute('href', newHref);
 }
 
+// For updating the year in footer credit
+document.getElementById("year").textContent = new Date().getFullYear();
 
 // Add an event listener for the 'resize' event testing
 
