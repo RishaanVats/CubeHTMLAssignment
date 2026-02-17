@@ -336,6 +336,12 @@ body {
     cursor: pointer;
 }
 
+#shopNowBtn_1:hover{
+    transform: translateY(-2px);
+    box-shadow: 0px 1px 5px 01px #666666;
+    transition: transform 0.25s ease;
+}
+
 /* Product Section */
 .productContainer {
     display: flex;
@@ -743,7 +749,7 @@ label {
     overflow: hidden;
     height: 0;
     opacity: 0;
-    transition: height 0.32s ease, opacity 0.25s ease, transform 0.25s ease;
+    transition: height 1.5s ease, opacity 0.25s ease, transform 0.25s ease;
     transform: translateY(-6px);
 }
 
@@ -870,6 +876,12 @@ label {
     cursor: pointer;
 }
 
+#addToCartBtn:hover{
+    transform: translateY(-2px);
+    box-shadow: 0px 1px 5px 01px #666666;
+    transition: transform 0.25s ease;
+}
+
 /* RIBBON STYLES */
 
 #statsRibbon {
@@ -992,6 +1004,12 @@ label {
     cursor: pointer;
 }
 
+#tryBtn:hover{
+    transform: translateY(-2px);
+    box-shadow: 0px 01px 5px 01px #666666;
+    transition: transform 0.25s ease;
+}
+
 /* TABLE STYLES */
 
 table {
@@ -1091,6 +1109,17 @@ td:nth-child(2) {
 
 }
 
+.footerSection a:hover{
+    transform: translateY(-2px);
+    transition: transform 0.25s ease;
+    /* animation: myAnimate 0.5s; */
+}
+
+@keyframes myAnimate{
+    0% { transform: translateY(0px);}
+    100%   { transform: translateY(-2px);}
+}
+
 .footerSection a img {
     margin-right: 12px;
     width: 25px;
@@ -1171,6 +1200,11 @@ td:nth-child(2) {
     cursor: pointer;
 }
 
+#footerSubscribe:hover {
+    /* transform: translateY(-2px); */
+    box-shadow: 0px 0px 5px 01px #00C950;
+    transition: transform 0.65s ease;
+}
 input[type=email] {
     background-color: #032E15;
     color: white;
