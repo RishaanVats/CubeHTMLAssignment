@@ -432,6 +432,12 @@ body {
     max-height: 130px;
 }
 
+.thumbnailCurrent {
+    border: 2px solid black;
+    padding: 2px;
+    border-radius: 5px;
+}
+
 /* Product Description and order section */
 #productName {
     margin-top: 0;
