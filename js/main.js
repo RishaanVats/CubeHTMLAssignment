@@ -2,35 +2,35 @@
 const images = {
     0: {
         alt: "Main bottle of perfume",
-        address: "./assets/mainPerfume.png",
+        address: "./assets/mainPerfume.webp",
     },
     1: {
         alt: "Two bottles of oils",
-        address: "./assets/thumbnails/pexels-pixabay-1.svg",
+        address: "./assets/thumbnails/pexels-pixabay-1.webp",
     },
     2: {
         alt: "One bottle of essential oil",
-        address: "./assets/thumbnails/pexels-pixabay-2.svg",
+        address: "./assets/thumbnails/pexels-pixabay-2.webp",
     },
     3: {
         alt: "Bottles of oils with a diffuser",
-        address: "./assets/thumbnails/pexels-pixabay-3.svg",
+        address: "./assets/thumbnails/pexels-pixabay-3.webp",
     },
     4: {
         alt: "Bottle of oil with flowers",
-        address: "./assets/thumbnails/pexels-pixabay-4.svg",
+        address: "./assets/thumbnails/pexels-pixabay-4.webp",
     },
     5: {
         alt: "Two bottles of oils",
-        address: "./assets/thumbnails/pexels-pixabay-1a.svg",
+        address: "./assets/thumbnails/pexels-pixabay-1 a.webp",
     },
     6: {
         alt: "One bottle of essential oil",
-        address: "./assets/thumbnails/pexels-pixabay-2a.svg",
+        address: "./assets/thumbnails/pexels-pixabay-2 a.webp",
     },
     7: {
         alt: "Bottles of oils with a diffuser",
-        address: "./assets/thumbnails/pexels-pixabay-3a.svg",
+        address: "./assets/thumbnails/pexels-pixabay-3 a.webp",
     },
 };
 

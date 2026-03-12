@@ -4,7 +4,33 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Home Page - GTG</title>
+    <meta name="title" content="Cube Tech - Dashboard & User Management Assignment">
+    <meta name="description"
+        content="A comprehensive front-end development assignment for Cube Technology featuring user data management, interactive dashboards, and responsive UI components.">
+    <meta name="keywords"
+        content="Cube Tech, Web Development Assignment, React Dashboard, Front-end Task, Firebase Hosting">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="author" content="Cube Tech Candidate">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cubetechassignment.web.app/">
+    <meta property="og:title" content="Cube Tech - Dashboard & User Management Assignment">
+    <meta property="og:description"
+        content="Check out my front-end development task for Cube Technology. Built with modern web technologies and hosted on Firebase.">
+    <meta property="og:image" content="https://cubetechassignment.web.app">
+    <!-- Replace with an actual screenshot link -->
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://cubetechassignment.web.app/">
+    <meta property="twitter:title" content="Cube Tech - Dashboard & User Management Assignment">
+    <meta property="twitter:description"
+        content="Interactive front-end project for Cube Technology's technical evaluation.">
+    <meta property="twitter:image" content="https://cubetechassignment.web.app">
+
     <!-- Referencing Inter Font -->
     <link rel="preconnect" href="https://rsms.me/" />
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
@@ -21,19 +47,20 @@
 <body>
     <header>
         <nav class="navbarWrapper" role="navigation">
-            <!-- <img id="logoGTG" src="./assets/logos/GTG.svg" alt="GTG Logo" /> -->
+            <!-- <img loading="lazy"  id="logoGTG" src="./assets/logos/GTG.svg" alt="GTG Logo" /> -->
             <p id="GTGLogo">GTG</p>
             <div class="navMenu">
                 <a href="/">Home</a>
                 <a href="/products">Shop
-                    <span><img class="downArrow" src="./assets/icons/Vector.svg" alt="down arrow" /></span></a>
+                    <span><img loading="lazy" class="downArrow" src="./assets/icons/Vector.svg"
+                            alt="down arrow" /></span></a>
                 <a href="/fragrances">Fragrances</a>
                 <a href="/about">About Us</a>
                 <a href="/blog">Blog</a>
                 <a href="/contact">Contact</a>
             </div>
             <div id="searchBtn">
-                <img id="searchIcon" src="./assets/icons/fi_2811790.png" alt="Search Icon" />
+                <img loading="lazy" id="searchIcon" src="./assets/icons/fi_2811790.png" alt="Search Icon" />
                 <button id="shopNowBtn">Shop Now</button>
             </div>
             <!-- Hamburger menu for mobile and tablet view -->
@@ -45,7 +72,8 @@
                 </div>
                 <div id="menuDropdown" class="dropdownContent">
                     <a href="/products">Shop
-                        <span><img class="downArrow" src="./assets/icons/Vector.svg" title="down arrow" /></span></a>
+                        <span><img loading="lazy" class="downArrow" src="./assets/icons/Vector.svg"
+                                title="down arrow" /></span></a>
                     <a href="/fragrances">Fragrances</a>
                     <a href="/about">About Us</a>
                     <a href="/blog">Blog</a>
@@ -57,7 +85,8 @@
     <div class="heroSection heroBG">
         <div class="heroContent">
             <div id="awardInfo">
-                <img id="awardMedal" src="./assets/icons/Medal.svg" alt="Medal icon" /><span id="awardDesc">Awarded the
+                <img loading="lazy" id="awardMedal" src="./assets/icons/Medal.svg" alt="Medal icon" /><span
+                    id="awardDesc">Awarded the
                     best perfume in the world</span>
             </div>
             <div>
@@ -84,13 +113,13 @@
         <section class="productContainer">
             <div id="imageSection">
                 <div id="mainImage">
-                    <img id="mainImg" alt="" />
+                    <img loading="lazy" id="mainImg" alt="" />
                     <div class="carousalControl">
-                        <img id="leftArrow" src="./assets/icons/Button.svg" alt="Left Arrow" />
+                        <img loading="lazy" id="leftArrow" src="./assets/icons/Button.svg" alt="Left Arrow" />
                         <div id="dotIndicators">
                             <!-- Place for injecting the dots with image status indicator using JavaScript -->
                         </div>
-                        <img id="rightArrow" src="./assets/icons/Button-1.svg" alt="Right Arrow" />
+                        <img loading="lazy" id="rightArrow" src="./assets/icons/Button-1.svg" alt="Right Arrow" />
                     </div>
                 </div>
                 <div id="thumbnailImages">
@@ -100,7 +129,7 @@
             <!-- DEscription Section -->
             <div id="descSection">
                 <p id="productName">GTG Perfumes</p>
-                <img src="./assets/icons/ratingStars.png"
+                <img loading="lazy" src="./assets/icons/ratingStars.png"
                     alt="rating 4.5 stars out of 5 from 999+ reviews" /><span>&nbsp;4.7 (999+ reviews)</span>
                 <p id="prodDesc">
                     Experience the timeless allure backed by modern artistry, captured in
@@ -108,7 +137,7 @@
                     their essence with purpose and sophistication.
                 </p>
                 <div id="mostPopHead">Most Popular</div>
-                
+
                 <div>
                     <form id="subscriptionForm">
                         <div class="formRadio">
@@ -135,10 +164,11 @@
                                                     <input type="radio" name="fragrance" value="Original"
                                                         id="original-1" form="perfumeSingleSub" checked>
                                                     <label for="original-1">Original</label>
-                                                    <img class="bestSellerIcon" src="./assets/icons/bestSeller.png" alt="Best Seller Icon" />
+                                                    <img loading="lazy" class="bestSellerIcon"
+                                                        src="./assets/icons/bestSeller.png" alt="Best Seller Icon" />
                                                 </div>
                                                 <div>
-                                                    <img src="./assets/icons/originalPerfume.png"
+                                                    <img loading="lazy" src="./assets/icons/originalPerfume.png"
                                                         alt="Original Perfume Icon" />
                                                 </div>
                                             </div>
@@ -149,7 +179,8 @@
                                                     <label for="lily-1">Lily</label>
                                                 </div>
                                                 <div>
-                                                    <img src="./assets/icons/LilyPerfume.png" alt="Lily Perfume Icon" />
+                                                    <img loading="lazy" src="./assets/icons/LilyPerfume.png"
+                                                        alt="Lily Perfume Icon" />
                                                 </div>
                                             </div>
                                             <div class="chooseFragrance">
@@ -159,7 +190,8 @@
                                                     <label for="rose-1">Rose</label>
                                                 </div>
                                                 <div>
-                                                    <img src="./assets/icons/rosePerfume.png" alt="Rose Perfume Icon" />
+                                                    <img loading="lazy" src="./assets/icons/rosePerfume.png"
+                                                        alt="Rose Perfume Icon" />
                                                 </div>
                                             </div>
                                         </fieldset>
@@ -170,34 +202,36 @@
                                     <div class="fragOptions">
                                         <div class="inclFrags wrapFull33">
                                             <p>Every 30 Days</p>
-                                            <img src="./assets/icons/originalPerfume.png" alt="Original Perfume Icon" />
+                                            <img loading="lazy" src="./assets/icons/originalPerfume.png"
+                                                alt="Original Perfume Icon" />
                                         </div>
                                         <div class="inclFrags wrapFull66">
                                             <p>One Time <span class="customBold">(Free)</span></p>
                                             <div>
-                                                <img class="shortImage" style="max-width: 70px"
+                                                <img loading="lazy" class="shortImage" style="max-width: 70px"
                                                     src="./assets/icons/originalPerfume.png"
                                                     alt="Original Perfume Icon" />
-                                                <img class="shortImage" style="max-width: 70px"
+                                                <img loading="lazy" class="shortImage" style="max-width: 70px"
                                                     src="./assets/icons/LilyPerfume.png" alt="Lily Perfume Icon" />
-                                                <img class="shortImage" style="max-width: 70px"
+                                                <img loading="lazy" class="shortImage" style="max-width: 70px"
                                                     src="./assets/icons/rosePerfume.png" alt="Rose Perfume Icon" />
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="checkPromises">
-                                    <p><img class="sealCheck" src="./assets/icons/SealCheck1.png"
+                                    <p><img loading="lazy" class="sealCheck" src="./assets/icons/SealCheck1.png"
                                             alt="seal check icon">&nbsp;1 Bottle Shipped Monthly</p>
-                                    <p><img class="sealCheck" src="./assets/icons/SealCheck1.png"
+                                    <p><img loading="lazy" class="sealCheck" src="./assets/icons/SealCheck1.png"
                                             alt="seal check icon">&nbsp;<span class="customBold">Free </span> Sampler
                                         for Original, Lily And Rose Fragrances</p>
-                                    <p class="customBold"><img class="sealCheck" src="./assets/icons/SealCheck1.png"
-                                            alt="seal check icon">&nbsp;50% OFF Shipping</p>
-                                    <p><img class="sealCheck" src="./assets/icons/SealCheck1.png"
+                                    <p class="customBold"><img loading="lazy" class="sealCheck"
+                                            src="./assets/icons/SealCheck1.png" alt="seal check icon">&nbsp;50% OFF
+                                        Shipping</p>
+                                    <p><img loading="lazy" class="sealCheck" src="./assets/icons/SealCheck1.png"
                                             alt="seal check icon">&nbsp;Pause or Cancel Anytime After 3 Months Minimum
                                     </p>
-                                    <p><img class="sealCheck" src="./assets/icons/SealCheck1.png"
+                                    <p><img loading="lazy" class="sealCheck" src="./assets/icons/SealCheck1.png"
                                             alt="seal check icon">&nbsp;28 Day Money Back Guarantee*</p>
                                 </div>
                             </div>
@@ -226,10 +260,11 @@
                                                     <input type="radio" name="fragrance1" value="Original"
                                                         id="original2-1" form="perfumeDoubleSub1" checked>
                                                     <label for="original2-1">Original</label>
-                                                    <img class="bestSellerIcon" src="./assets/icons/bestSeller.png" alt="Best Seller Icon" />
+                                                    <img loading="lazy" class="bestSellerIcon"
+                                                        src="./assets/icons/bestSeller.png" alt="Best Seller Icon" />
                                                 </div>
                                                 <div>
-                                                    <img src="./assets/icons/originalPerfume.png"
+                                                    <img loading="lazy" src="./assets/icons/originalPerfume.png"
                                                         alt="Original Perfume Icon" />
                                                 </div>
                                             </div>
@@ -240,7 +275,8 @@
                                                     <label for="lily2-1">Lily</label>
                                                 </div>
                                                 <div>
-                                                    <img src="./assets/icons/LilyPerfume.png" alt="Lily Perfume Icon" />
+                                                    <img loading="lazy" src="./assets/icons/LilyPerfume.png"
+                                                        alt="Lily Perfume Icon" />
                                                 </div>
                                             </div>
                                             <div class="chooseFragrance">
@@ -250,7 +286,8 @@
                                                     <label for="rose2-1">Rose</label>
                                                 </div>
                                                 <div>
-                                                    <img src="./assets/icons/rosePerfume.png" alt="Rose Perfume Icon" />
+                                                    <img loading="lazy" src="./assets/icons/rosePerfume.png"
+                                                        alt="Rose Perfume Icon" />
                                                 </div>
                                             </div>
                                         </fieldset>
@@ -265,10 +302,11 @@
                                                     <input type="radio" name="fragrance2" value="Original"
                                                         id="original2-2" form="perfumeDoubleSub2" checked>
                                                     <label for="original2-2">Original</label>
-                                                    <img class="bestSellerIcon" style="top: 255px;" src="./assets/icons/bestSeller.png" alt="Best Seller Icon" />
+                                                    <img loading="lazy" class="bestSellerIcon" style="top: 255px;"
+                                                        src="./assets/icons/bestSeller.png" alt="Best Seller Icon" />
                                                 </div>
                                                 <div>
-                                                    <img src="./assets/icons/originalPerfume.png"
+                                                    <img loading="lazy" src="./assets/icons/originalPerfume.png"
                                                         alt="Original Perfume Icon" />
                                                 </div>
                                             </div>
@@ -279,7 +317,8 @@
                                                     <label for="lily2-2">Lily</label>
                                                 </div>
                                                 <div>
-                                                    <img src="./assets/icons/LilyPerfume.png" alt="Lily Perfume Icon" />
+                                                    <img loading="lazy" src="./assets/icons/LilyPerfume.png"
+                                                        alt="Lily Perfume Icon" />
                                                 </div>
                                             </div>
                                             <div class="chooseFragrance">
@@ -289,7 +328,8 @@
                                                     <label for="rose2-2">Rose</label>
                                                 </div>
                                                 <div>
-                                                    <img src="./assets/icons/rosePerfume.png" alt="Rose Perfume Icon" />
+                                                    <img loading="lazy" src="./assets/icons/rosePerfume.png"
+                                                        alt="Rose Perfume Icon" />
                                                 </div>
                                             </div>
                                         </fieldset>
@@ -300,35 +340,40 @@
                                     <div class="fragOptions">
                                         <div class="inclFrags wrapFull33">
                                             <p>Every 30 Days</p>
-                                            <img src="./assets/icons/originalPerfume.png" alt="Original Perfume Icon" />
+                                            <img loading="lazy" src="./assets/icons/originalPerfume.png"
+                                                alt="Original Perfume Icon" />
                                         </div>
                                         <div class="inclFrags wrapFull66">
                                             <p>One Time <span class="customBold">(Free)</span></p>
                                             <div>
-                                                <img class="shortImage" style="max-width: 70px"
+                                                <img loading="lazy" class="shortImage" style="max-width: 70px"
                                                     src="./assets/icons/originalPerfume.png"
                                                     alt="Original Perfume Icon" />
-                                                <img class="shortImage" style="max-width: 70px"
+                                                <img loading="lazy" class="shortImage" style="max-width: 70px"
                                                     src="./assets/icons/LilyPerfume.png" alt="Lily Perfume Icon" />
-                                                <img class="shortImage" style="max-width: 70px"
+                                                <img loading="lazy" class="shortImage" style="max-width: 70px"
                                                     src="./assets/icons/rosePerfume.png" alt="Rose Perfume Icon" />
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="checkPromises">
-                                    <p><img class="sealCheck" src="./assets/icons/SealCheck1.png" aria-hidden="true"
-                                            alt="seal check icon">&nbsp;1 Bottle Shipped Monthly</p>
-                                    <p><img class="sealCheck" src="./assets/icons/SealCheck1.png" aria-hidden="true"
-                                            alt="seal check icon">&nbsp;<span class="customBold">Free </span> Sampler
+                                    <p><img loading="lazy" class="sealCheck" src="./assets/icons/SealCheck1.png"
+                                            aria-hidden="true" alt="seal check icon">&nbsp;1 Bottle Shipped Monthly</p>
+                                    <p><img loading="lazy" class="sealCheck" src="./assets/icons/SealCheck1.png"
+                                            aria-hidden="true" alt="seal check icon">&nbsp;<span class="customBold">Free
+                                        </span> Sampler
                                         for Original, Lily And Rose Fragrances</p>
-                                    <p class="customBold"><img class="sealCheck" src="./assets/icons/SealCheck1.png"
-                                            aria-hidden="true" alt="seal check icon">&nbsp;50% OFF Shipping</p>
-                                    <p><img class="sealCheck" src="./assets/icons/SealCheck1.png" aria-hidden="true"
-                                            alt="seal check icon">&nbsp;Pause or Cancel Anytime After 3 Months Minimum
+                                    <p class="customBold"><img loading="lazy" class="sealCheck"
+                                            src="./assets/icons/SealCheck1.png" aria-hidden="true"
+                                            alt="seal check icon">&nbsp;50% OFF Shipping</p>
+                                    <p><img loading="lazy" class="sealCheck" src="./assets/icons/SealCheck1.png"
+                                            aria-hidden="true" alt="seal check icon">&nbsp;Pause or Cancel Anytime After
+                                        3 Months Minimum
                                     </p>
-                                    <p><img class="sealCheck" src="./assets/icons/SealCheck1.png" aria-hidden="true"
-                                            alt="seal check icon">&nbsp;28 Day Money Back Guarantee*</p>
+                                    <p><img loading="lazy" class="sealCheck" src="./assets/icons/SealCheck1.png"
+                                            aria-hidden="true" alt="seal check icon">&nbsp;28 Day Money Back Guarantee*
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -341,25 +386,25 @@
             <div id="collectionText">
                 <p id="collectionHead">Our Collection</p>
                 <div class="collectionExpandable">
-                    <p class="secHead">Signature Scents</p><span><img src="./assets/icons/collapse-minus.png"
-                            alt="collapse/exapand indicator" /></span>
+                    <p class="secHead">Signature Scents</p><span><img loading="lazy"
+                            src="./assets/icons/collapse-minus.png" alt="collapse/exapand indicator" /></span>
                     <p>Discover our curated line of signature perfumes, designed to become your daily companion.</p>
                 </div>
                 <div class="collectionExpandable">
-                    <p class="secHead">Signature Scents</p><span><img src="./assets/icons/expand-plus.png"
-                            alt="collapse/exapand indicator" /></span>
+                    <p class="secHead">Signature Scents</p><span><img loading="lazy"
+                            src="./assets/icons/expand-plus.png" alt="collapse/exapand indicator" /></span>
                 </div>
                 <div class="collectionExpandable">
-                    <p class="secHead">Signature Scents</p><span><img src="./assets/icons/expand-plus.png"
-                            alt="collapse/exapand indicator" /></span>
+                    <p class="secHead">Signature Scents</p><span><img loading="lazy"
+                            src="./assets/icons/expand-plus.png" alt="collapse/exapand indicator" /></span>
                 </div>
                 <div class="collectionExpandable">
-                    <p class="secHead">Signature Scents</p><span><img src="./assets/icons/expand-plus.png"
-                            alt="collapse/exapand indicator" /></span>
+                    <p class="secHead">Signature Scents</p><span><img loading="lazy"
+                            src="./assets/icons/expand-plus.png" alt="collapse/exapand indicator" /></span>
                 </div>
             </div>
             <div id="collectionImg">
-                <img src="./assets/midSection.jpg" alt="Collection Image" />
+                <img loading="lazy" src="./assets/midSection.webp" alt="Collection Image" />
             </div>
         </section>
         <section id="statsRibbon">
@@ -388,10 +433,10 @@
             <table>
                 <tr>
                     <th>Quantities</th>
-                    <th><img src="./assets//icons/gtg.png" alt="GTG perfume image"></th>
-                    <th><img src="./assets/icons/arose.png" alt="Arose perfume image"></th>
-                    <th><img src="./assets/icons/bella.png" alt="Bella perfume image"></th>
-                    <th><img src="./assets/icons/daisies.png" alt="Daisies perfume image"></th>
+                    <th><img loading="lazy" src="./assets//icons/gtg.png" alt="GTG perfume image"></th>
+                    <th><img loading="lazy" src="./assets/icons/arose.png" alt="Arose perfume image"></th>
+                    <th><img loading="lazy" src="./assets/icons/bella.png" alt="Bella perfume image"></th>
+                    <th><img loading="lazy" src="./assets/icons/daisies.png" alt="Daisies perfume image"></th>
                 </tr>
                 <tr style="vertical-align: top;">
                     <th></th>
@@ -409,17 +454,17 @@
                 </tr>
                 <tr>
                     <td class="rowHead">Longevity</td>
-                    <td><img src="./assets/icons/gtgTick.svg" alt="present"></td>
-                    <td><img src="./assets/icons/cross.svg" alt="absent"></td>
-                    <td><img src="./assets/icons/cross.svg" alt="absent"></td>
-                    <td><img src="./assets/icons/tick.svg" alt="present"></td>
+                    <td><img loading="lazy" src="./assets/icons/gtgTick.svg" alt="present"></td>
+                    <td><img loading="lazy" src="./assets/icons/cross.svg" alt="absent"></td>
+                    <td><img loading="lazy" src="./assets/icons/cross.svg" alt="absent"></td>
+                    <td><img loading="lazy" src="./assets/icons/tick.svg" alt="present"></td>
                 </tr>
                 <tr>
                     <td class="rowHead">Sillage</td>
-                    <td><img src="./assets/icons/gtgTick.svg" alt="present"></td>
-                    <td><img src="./assets/icons/cross.svg" alt="absent"></td>
-                    <td><img src="./assets/icons/cross.svg" alt="absent"></td>
-                    <td><img src="./assets/icons/cross.svg" alt="absent"></td>
+                    <td><img loading="lazy" src="./assets/icons/gtgTick.svg" alt="present"></td>
+                    <td><img loading="lazy" src="./assets/icons/cross.svg" alt="absent"></td>
+                    <td><img loading="lazy" src="./assets/icons/cross.svg" alt="absent"></td>
+                    <td><img loading="lazy" src="./assets/icons/cross.svg" alt="absent"></td>
                 </tr>
                 <tr>
                     <td class="rowHead">Bottle Design Score</td>
@@ -430,31 +475,31 @@
                 </tr>
                 <tr>
                     <td class="rowHead">Blend and Harmony</td>
-                    <td><img src="./assets/icons/gtgTick.svg" alt="present"></td>
-                    <td><img src="./assets/icons/cross.svg" alt="absent"></td>
-                    <td><img src="./assets/icons/cross.svg" alt="absent"></td>
-                    <td><img src="./assets/icons/cross.svg" alt="absent"></td>
+                    <td><img loading="lazy" src="./assets/icons/gtgTick.svg" alt="present"></td>
+                    <td><img loading="lazy" src="./assets/icons/cross.svg" alt="absent"></td>
+                    <td><img loading="lazy" src="./assets/icons/cross.svg" alt="absent"></td>
+                    <td><img loading="lazy" src="./assets/icons/cross.svg" alt="absent"></td>
                 </tr>
                 <tr>
                     <td class="rowHead">Skin Compatibility</td>
-                    <td><img src="./assets/icons/gtgTick.svg" alt="present"></td>
-                    <td><img src="./assets/icons/cross.svg" alt="absent"></td>
-                    <td><img src="./assets/icons/cross.svg" alt="absent"></td>
-                    <td><img src="./assets/icons/cross.svg" alt="absent"></td>
+                    <td><img loading="lazy" src="./assets/icons/gtgTick.svg" alt="present"></td>
+                    <td><img loading="lazy" src="./assets/icons/cross.svg" alt="absent"></td>
+                    <td><img loading="lazy" src="./assets/icons/cross.svg" alt="absent"></td>
+                    <td><img loading="lazy" src="./assets/icons/cross.svg" alt="absent"></td>
                 </tr>
                 <tr>
                     <td class="rowHead">Scent Profile</td>
-                    <td><img src="./assets/icons/gtgTick.svg" alt="present"></td>
-                    <td><img src="./assets/icons/tick.svg" alt="present"></td>
-                    <td><img src="./assets/icons/cross.svg" alt="absent"></td>
-                    <td><img src="./assets/icons/cross.svg" alt="absent"></td>
+                    <td><img loading="lazy" src="./assets/icons/gtgTick.svg" alt="present"></td>
+                    <td><img loading="lazy" src="./assets/icons/tick.svg" alt="present"></td>
+                    <td><img loading="lazy" src="./assets/icons/cross.svg" alt="absent"></td>
+                    <td><img loading="lazy" src="./assets/icons/cross.svg" alt="absent"></td>
                 </tr>
                 <tr>
                     <td class="rowHead">Price vs. Quality</td>
-                    <td><img src="./assets/icons/gtgTick.svg" alt="present"></td>
-                    <td><img src="./assets/icons/tick.svg" alt="present"></td>
-                    <td><img src="./assets/icons/cross.svg" alt="absent"></td>
-                    <td><img src="./assets/icons/tick.svg" alt="present"></td>
+                    <td><img loading="lazy" src="./assets/icons/gtgTick.svg" alt="present"></td>
+                    <td><img loading="lazy" src="./assets/icons/tick.svg" alt="present"></td>
+                    <td><img loading="lazy" src="./assets/icons/cross.svg" alt="absent"></td>
+                    <td><img loading="lazy" src="./assets/icons/tick.svg" alt="present"></td>
                 </tr>
             </table>
             <button id="tryBtn">Try It Risk-Free</button>
@@ -477,13 +522,13 @@
                     <a href="/contact" title="Link to contact section">Contact</a>
                 </div>
                 <div class="footerSection">
-                    <a href="https://www.facebook.com" target="_blank" title="Link to Facebook"><img
+                    <a href="https://www.facebook.com" target="_blank" title="Link to Facebook"><img loading="lazy"
                             style="height: 20px; width: 20px" src="./assets/icons/Facebook.png"
                             alt="Facebook icon" />Facebook</a>
-                    <a href="https://www.instagram.com" target="_blank" title="Link to Instagram"><img
+                    <a href="https://www.instagram.com" target="_blank" title="Link to Instagram"><img loading="lazy"
                             style="height: 18px; width: 18px" src="./assets/icons/instagram.png"
                             alt="Instagram icon" />Instagram</a>
-                    <a href="https://www.x.com" target="_blank" title="Link to X (formerly twitter)"><img
+                    <a href="https://www.x.com" target="_blank" title="Link to X (formerly twitter)"><img loading="lazy"
                             style="height: 16px; width: 18px" src="./assets/icons/x.png"
                             alt="X (formerly twitter) icon" />X</a>
                 </div>
