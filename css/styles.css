@@ -15,6 +15,7 @@ body {
 @supports (font-variation-settings: normal) {
     :root {
         font-family: InterVariable, sans-serif;
+        font-display: swap;
     }
 }
 
@@ -203,7 +204,7 @@ body {
 }
 
 .heroBG {
-    background: #FFFFFF url("../assets/heroBackground.png") no-repeat;
+    background: #FFFFFF url("https://res.cloudinary.com/di65luiy8/image/upload/v1774165339/heroBackground_yqujya.webp") no-repeat;
     background-origin: content-box;
     /* background-size: cover; */
     background-size: 100% auto;
@@ -376,7 +377,7 @@ body {
     min-width: 200px;
     width: 100%;
     height: 100%;
-    border-radius: 16px;
+    border-radius: 50px;
 }
 
 .carousalControl {

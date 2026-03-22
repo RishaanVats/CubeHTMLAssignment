@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Home Page -->
+  <url>
+    <loc>https://cubetechassignment.web.app</loc>
+    <lastmod>2024-03-21</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <!-- Shop/Products -->
+  <url>
+    <loc>https://cubetechassignment.web.appproducts</loc>
+    <lastmod>2024-03-21</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <!-- Fragrances -->
+  <url>
+    <loc>https://cubetechassignment.web.appfragrances</loc>
+    <lastmod>2024-03-21</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <!-- About Us -->
+  <url>
+    <loc>https://cubetechassignment.web.appabout</loc>
+    <lastmod>2024-03-21</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <!-- Blog -->
+  <url>
+    <loc>https://cubetechassignment.web.appblog</loc>
+    <lastmod>2024-03-21</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <!-- Contact -->
+  <url>
+    <loc>https://cubetechassignment.web.appcontact</loc>
+    <lastmod>2024-03-21</lastmod>
+    <priority>0.5</priority>
+  </url>
+</urlset>
