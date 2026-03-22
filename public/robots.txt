@@ -1,0 +1,35 @@
+# ==========================================================
+# SEO Optimized robots.txt for GTG Perfumes
+# ==========================================================
+
+User-agent: *
+Allow: /
+Allow: /assets/
+Allow: /css/
+# Crucial: Allow JS so Google can render your interactive elements
+Allow: /js/
+
+# 1. Block technical/private directories only
+Disallow: /admin/
+Disallow: /config/
+Disallow: /private/
+Disallow: /tmp/
+
+# 2. Block internal search results (Crawl Trap Prevention)
+Disallow: /search?
+Disallow: /*?s=
+
+# 3. Block development files
+Disallow: /npm-debug.log
+Disallow: /yarn-error.log
+Disallow: /.env
+Disallow: /.git/
+
+# 4. AI Scraper Protection (2026 Standard)
+User-agent: GPTBot
+Disallow: /
+User-agent: CCBot
+Disallow: /
+
+# Absolute path to sitemap is mandatory
+Sitemap: https://cubetechassignment.web.app

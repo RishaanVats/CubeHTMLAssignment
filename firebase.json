@@ -8,7 +8,7 @@
     ],
     "rewrites": [
       {
-        "source": "**",
+        "source": "!/@(robots.txt|sitemap.xml|assets/**|css/**|js/**)",
         "destination": "/index.html"
       }
     ]
